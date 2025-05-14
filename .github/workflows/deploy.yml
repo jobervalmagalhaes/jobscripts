@@ -8,6 +8,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Adiciona permissão de escrita
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
