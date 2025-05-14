@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'JOB Scripts Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'JOB Scripts',
+  tagline: 'Scripts, hotkeys, icons, tudo para ElfBot NG.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -76,9 +76,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'JOB Scripts',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'JOB Scripts Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -109,37 +109,37 @@ const config = {
             ],
           },
           {
-            title: 'Community',
+            title: 'Contatos',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'WhatsApp',
+                href: 'https://wa.me/5582999464655',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
+                label: 'Telegram',
+                href: 'https://t.me/+5582999464655',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Social',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Instagram',
+                href: 'https://instagram.com/jobscripts',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Facebook',
+                href: 'https://facebook.com/jobscripts',
+              },
+                            {
+                label: 'YouTube',
+                href: 'https://youtube.com/jobscripts',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Todos os direitos reservados. © ${new Date().getFullYear()} <strong>JOB Scripts</strong>.<br>Feito com Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
