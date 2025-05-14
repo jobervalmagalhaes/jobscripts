@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkjobscripts_site=self.webpackChunkjobscripts_site||[]).push([[1903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/jobscripts-site/blog","blogTitle":"Blog","authorsListPath":"/jobscripts-site/blog/authors"}')}}]);
