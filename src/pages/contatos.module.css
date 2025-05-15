@@ -1,0 +1,34 @@
+.container {
+  text-align: center;
+}
+
+.text {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  text-decoration: none;
+  color: var(--ifm-font-color-base);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 30px;
+  object-fit: contain;
+  background-color: white;
+  padding: 1rem;
+}

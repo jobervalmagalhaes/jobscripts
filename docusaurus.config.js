@@ -83,31 +83,37 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            to: '/contatos',
+            label: 'Contatos',
             position: 'right',
           },
+          {            
+            to: '/exemplo',
+            label: 'Scripts',
+            position: 'right',
+          },
+          {            
+            to: '/exemplo',
+            label: 'Hotkeys',
+            position: 'right',
+          },
+          {
+            to: '/exemplo',
+            label: 'Arquivos',
+            position: 'right',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'right',
+            label: 'Tutorial',
+          },
+          {to: '/blog', label: 'Blog', position: 'right'},
         ],
       },
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
           {
             title: 'Contatos',
             items: [
@@ -135,6 +141,19 @@ const config = {
                             {
                 label: 'YouTube',
                 href: 'https://youtube.com/jobscripts',
+              },
+            ],
+          },
+          {
+            title: 'Legal',
+            items: [
+              {
+                label: 'Política de Privacidade',
+                to: '/legal/privacidade',
+              },
+              {
+                label: 'Termos de Uso',
+                to: '/legal/termos',
               },
             ],
           },

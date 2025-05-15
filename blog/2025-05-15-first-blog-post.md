@@ -1,8 +1,8 @@
 ---
-slug: first-blog-post
-title: First Blog Post
-authors: [slorber, yangshun]
-tags: [hola, docusaurus]
+slug: primeira-postagem-do-blog
+title: Primeira Postagem do Blog
+authors: jobscripts
+tags: [jobscripts]
 ---
 
 Lorem ipsum dolor sit amet...
