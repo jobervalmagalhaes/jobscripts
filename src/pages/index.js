@@ -34,7 +34,7 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title}`}
+      title={`Início`}
       description="Scripts, hotkeys, icons, tudo para ElfBot NG."
     >
       <HomepageHeader />

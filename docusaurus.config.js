@@ -11,7 +11,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
  /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'JOB Scripts',
-  tagline: 'Scripts, hotkeys, icons, tudo para ElfBot NG.',
+  tagline: 'Scripts, hotkeys, custom e muito mais para ElfBot NG.',
   favicon: 'img/favicon.ico',
 
   // Defina aqui a URL de produção do seu site
@@ -103,7 +103,7 @@ const config = {
             position: 'right',
           },
           {
-            to: '/exemplo',
+            to: '/arquivos',
             label: 'Arquivos',
             position: 'right',
           },
