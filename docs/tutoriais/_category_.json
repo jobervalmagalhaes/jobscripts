@@ -1,0 +1,8 @@
+{
+  "label": "Tutoriais",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Aqui você encontra alguns tutoriais em geral para o ElfBot NG e o jogo."
+  }
+}

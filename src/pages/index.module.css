@@ -1,23 +1,41 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
 .heroBanner {
   padding: 4rem 0;
-  text-align: center;
+  text-align: right;
   position: relative;
   overflow: hidden;
+  background-image: url('/img/banner.jpg'); /* Caminho da imagem */
+  background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+  background-position: center; /* Centraliza a imagem */
+  color: white; /* Garante que o texto seja legível sobre a imagem */
+  min-height: 400px; /* Altura mínima para garantir visibilidade */
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+/* Ajuste o texto para melhor legibilidade */
+.heroBanner h1,
+.heroBanner p {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Sombra no texto para contraste */
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Estiliza o botão */
+.buttons .button {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+}
+
+.buttons .button:hover {
+  background-color: #f0f0f0;
+  color: #000000;
+}
+
+/* Ajuste o tamanho do logotipo */
+.heroLogo {
+  max-width: 400px; /* Reduz o tamanho máximo do logotipo */
+  width: 100%; /* Mantém a proporção responsiva */
+  height: auto; /* Preserva a proporção da imagem */
+  margin-bottom: 1rem; /* Espaçamento abaixo do logotipo */
+  opacity: 1; /* Garante visibilidade */
+  z-index: 3; /* Garante que fique acima da camada de fundo */
 }

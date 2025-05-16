@@ -2,7 +2,7 @@ jobscripts:
   name: JOB Scripts
   title: O scripter
   url: https://jobscripts.com.br
-  image_url: https://avatars.githubusercontent.com/u/29413697?v=4
+  image_url: '/img/jobscripts.jpg'
   #page: true
   page:
     permalink: '/all-jobscripts/'

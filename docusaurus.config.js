@@ -1,36 +1,35 @@
 // @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
+// As anotações JSDoc com `@type` permitem autocompletar no editor e checagem de tipos
+// (quando combinadas com `@ts-check`).
+// Existem várias formas equivalentes de declarar a configuração do Docusaurus.
+// Veja: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+// Este código roda no Node.js - Não use código do lado do cliente aqui (APIs do navegador, JSX...)
 
-/** @type {import('@docusaurus/types').Config} */
+ /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'JOB Scripts',
   tagline: 'Scripts, hotkeys, icons, tudo para ElfBot NG.',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
+  // Defina aqui a URL de produção do seu site
   url: 'https://jobervalmagalhaes.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+  // Defina o caminho /<baseUrl>/ sob o qual seu site será servido
+  // Para implantação no GitHub Pages, normalmente é '/<nomeDoProjeto>/'
   baseUrl: '/jobscripts-site/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'jobervalmagalhaes', // Usually your GitHub org/user name.
-  projectName: 'jobscripts-site', // Usually your repo name.
+  // Configuração de implantação no GitHub Pages.
+  // Se você não estiver usando o GitHub Pages, não precisa disso.
+  organizationName: 'jobervalmagalhaes', // Normalmente o nome do seu usuário ou organização no GitHub.
+  projectName: 'jobscripts-site', // Normalmente o nome do repositório.
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: 'throw', // Lança erro em links quebrados
+  onBrokenMarkdownLinks: 'warn', // Apenas avisa em links Markdown quebrados
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  // Mesmo que você não use internacionalização, pode usar este campo
+  // para definir metadados úteis, como o idioma do HTML.
   i18n: {
     defaultLocale: 'pt-BR',
     locales: ['pt-BR'],
@@ -43,10 +42,10 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/jobervalmagalhaes/jobscripts-site/tree/main/packages/create-docusaurus/templates/shared/',
+          // Altere isso para o seu repositório.
+          // Remova para tirar os links de "editar esta página".
+          //editUrl:
+           // 'https://github.com/jobervalmagalhaes/jobscripts-site/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -54,11 +53,11 @@ const config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/jobervalmagalhaes/jobscripts-site/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
+          // Altere isso para o seu repositório.
+          // Remova para tirar os links de "editar esta página".
+          //editUrl:
+            //'https://github.com/jobervalmagalhaes/jobscripts-site/tree/main/packages/create-docusaurus/templates/shared/',
+          // Opções úteis para reforçar boas práticas de blog
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -73,15 +72,21 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
+      // Substitua pela imagem de destaque do seu projeto
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'JOB Scripts',
         logo: {
-          alt: 'JOB Scripts Logo',
+          alt: 'Logo JOB Scripts',
           src: 'img/logo.svg',
         },
         items: [
+            {
+            to: '/',
+            label: 'Início',
+            position: 'right',
+            activeBaseRegex: '^/$'
+          },
           {
             to: '/contatos',
             label: 'Contatos',
@@ -106,7 +111,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'right',
-            label: 'Tutorial',
+            label: 'Docs',
           },
           {to: '/blog', label: 'Blog', position: 'right'},
         ],
@@ -138,7 +143,7 @@ const config = {
                 label: 'Facebook',
                 href: 'https://facebook.com/jobscripts',
               },
-                            {
+              {
                 label: 'YouTube',
                 href: 'https://youtube.com/jobscripts',
               },
@@ -158,7 +163,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Todos os direitos reservados. © ${new Date().getFullYear()} <strong>JOB Scripts</strong>.<br>Feito com Docusaurus.`,
+        copyright: `Todos os direitos reservados. © ${new Date().getFullYear()} <strong>JOB Scripts</strong>.<br>Tecnologia do Facebook.`,
       },
       prism: {
         theme: prismThemes.github,

@@ -20,18 +20,18 @@ export default function Contatos() {
               rel="noopener noreferrer"
               className={styles.card}
             >
-              <img src="/img/whatsapp-icon.png" alt="WhatsApp" />
+              <img src="img/whatsapp.png" alt="WhatsApp" />
               <p><strong><u>+55 82 9 9946-4655</u></strong></p>
             </a>
 
             {/* Telegram */}
             <a
-              href="https://t.me/seu_usuario"
+              href="https://t.me/jobscripts"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.card}
             >
-              <img src="/img/telegram-icon.png" alt="Telegram" />
+              <img src="img/telegram.png" alt="Telegram" />
               <p><strong><u>+55 82 9 9946-4655</u></strong></p>
             </a>
           </div>
