@@ -44,8 +44,8 @@ const config = {
           sidebarPath: './sidebars.js',
           // Altere isso para o seu repositório.
           // Remova para tirar os links de "editar esta página".
-          //editUrl:
-           // 'https://github.com/jobervalmagalhaes/jobervalmagalhaes/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl:
+            'https://github.com/jobervalmagalhaes/jobervalmagalhaes/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -55,8 +55,8 @@ const config = {
           },
           // Altere isso para o seu repositório.
           // Remova para tirar os links de "editar esta página".
-          //editUrl:
-            //'https://github.com/jobervalmagalhaes/jobervalmagalhaes/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl:
+            'https://github.com/jobervalmagalhaes/jobervalmagalhaes/tree/main/packages/create-docusaurus/templates/shared/',
           // Opções úteis para reforçar boas práticas de blog
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
