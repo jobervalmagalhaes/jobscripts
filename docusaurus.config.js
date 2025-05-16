@@ -18,12 +18,12 @@ const config = {
   url: 'https://jobervalmagalhaes.github.io',
   // Defina o caminho /<baseUrl>/ sob o qual seu site será servido
   // Para implantação no GitHub Pages, normalmente é '/<nomeDoProjeto>/'
-  baseUrl: '/jobscripts-site/',
+  baseUrl: '/',
 
   // Configuração de implantação no GitHub Pages.
   // Se você não estiver usando o GitHub Pages, não precisa disso.
   organizationName: 'jobervalmagalhaes', // Normalmente o nome do seu usuário ou organização no GitHub.
-  projectName: 'jobscripts-site', // Normalmente o nome do repositório.
+  projectName: 'jobervalmagalhaes', // Normalmente o nome do repositório.
 
   onBrokenLinks: 'throw', // Lança erro em links quebrados
   onBrokenMarkdownLinks: 'warn', // Apenas avisa em links Markdown quebrados
@@ -45,7 +45,7 @@ const config = {
           // Altere isso para o seu repositório.
           // Remova para tirar os links de "editar esta página".
           //editUrl:
-           // 'https://github.com/jobervalmagalhaes/jobscripts-site/tree/main/packages/create-docusaurus/templates/shared/',
+           // 'https://github.com/jobervalmagalhaes/jobervalmagalhaes/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -56,7 +56,7 @@ const config = {
           // Altere isso para o seu repositório.
           // Remova para tirar os links de "editar esta página".
           //editUrl:
-            //'https://github.com/jobervalmagalhaes/jobscripts-site/tree/main/packages/create-docusaurus/templates/shared/',
+            //'https://github.com/jobervalmagalhaes/jobervalmagalhaes/tree/main/packages/create-docusaurus/templates/shared/',
           // Opções úteis para reforçar boas práticas de blog
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
