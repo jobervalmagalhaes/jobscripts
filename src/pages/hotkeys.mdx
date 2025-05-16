@@ -118,21 +118,14 @@ auto 200 listas 'Anti-idle - JOBSCRIPTS' | if [$standtime >= 3*60*1000] {turnn |
 ## Dash
 Só adicionar as hotkeys por tecla em seus respectivos números.
 
-1 → ```movesw```
-
-2 → ```moves```
-
-3 → ```movese```
-
-4 → ```movew```
-
-6 → ```movee```
-
-7 → ```movenw```
-
-8 → ```moven```
-
-9 → ```movene```
+1. ```movesw```
+2. ```moves```
+3. ```movese```
+4. ```movew```
+6. ```movee```
+7. ```movenw```
+8. ```moven```
+9. ```movene```
 
 ---
 ## Displaymap
@@ -265,16 +258,12 @@ auto 200 listas 'Auto Channel MSG - JOBSCRIPTS' | {sayin 'Trade' 'MENSAGEM' | wa
 ```
 ---
 ## Últimas mensagens na tela
-
 Você vai precisar ativar algumas opções no HUD:
+1. On-screen Info Enabled
+2. General Information
+3. Activated hotkeys/shortkeys
 
-→ On-screen Info Enabled
-
-→ General Information
-
-→ Activated hotkeys/shortkeys
-
-→ Após ativar todas, clique em SAVE.
+ Após ativar todas, clique em **SAVE**.
 
 ```js
 auto 100 dontlist | listboxsetup 1 [3] [$screenbottom-10] 6 4500000 'up' | foreach 'newmessages' $list if [$list.isprivate && $list.sender != $name] { ifnot $list.isbotlook { listboxaddline 1 $setcolor 237 242 '$systime [$list.sender]: $list.content' }}
@@ -282,18 +271,13 @@ auto 100 dontlist | listboxsetup 1 [3] [$screenbottom-10] 6 4500000 'up' | forea
 ---
 ## Exp/h para level 500 ou maior
 Você vai precisar ativar algumas opções no HUD:
+1. On-screen Info Enabled
+2. General Information
+3. Activated hotkeys/shortkeys
 
-→ On-screen Info Enabled
-
-→ General Information
-
-→ Activated hotkeys/shortkeys
-
-Após ativar todas, clique em SAVE.
-
-Ela só atualiza de 5 em 5 minutos.
-
-Confira como fica: https://prnt.sc/266jnj1
+ Após ativar todas, clique em **SAVE**.
+- Ela só atualiza de 5 em 5 minutos.
+- Confira como fica: https://prnt.sc/266jnj1
 ```js
 auto 200 dontlist | {set $expctrl 0 | turnoff}
 auto 200 dontlist | foreach 'newmessages' $exphtk if [$exphtk.content ? 'gained' && $exphtk.sender == 0] {set $expcalc [$token.'$exphtk.content'.3+$expcalc]}
@@ -469,3 +453,6 @@ Só é usado caso não seja possível usar a UE.
 ```js
 auto 200 dontlist | if [$control_spell == 0 && $target.ismonster && $target.isshootable && $target.hppc >= 1 && $target.distance <= 3] {say 'exori con'}
 ```
+#### Créditos
+Algumas hotkeys desta página foram feitas por:
+- Ciro Script, Davi Script;

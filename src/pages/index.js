@@ -20,9 +20,9 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="#"
+            to="/docs/category/elfbot-ng"
           >
-            ElfBot Tutorial - 5min ⏱️
+            Aprenda a utilizar o ElfBot NG
           </Link>
         </div>
       </div>

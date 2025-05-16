@@ -4,42 +4,39 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: '100% AFK',
+    imgSrc: '/img/100afk.png',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Script profissional e avançado com funções personalizadas, como treiners, caça PK, refill, loot, banco... Hotkeys, icons, tudo para ElfBot NG.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Atualizado e melhorado',
+    imgSrc: '/img/dev.png',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Novas funções, melhorias e correções de bugs de acordo com o feedback e dicas dos usuários.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Suporte contínuo',
+    imgSrc: '/img/suporte.png',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Suporte eficiente de qualidade, com explicações, acesso remoto, chamadas, cast e etc.
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ imgSrc, title, description }) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img className={styles.featureSvg} src={imgSrc} alt={title}/>
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
