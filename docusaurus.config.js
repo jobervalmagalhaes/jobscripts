@@ -92,13 +92,34 @@ const config = {
             label: 'Contatos',
             position: 'right',
           },
-          {            
-            to: '/exemplo',
+          {
             label: 'Scripts',
             position: 'right',
+            items: [
+              {
+                label: 'Cavebots Gratuitos',
+                to: '/cavebots-gratuitos',
+              },
+              {
+                label: 'Cavebots Privados',
+                to: '/cavebots-privados',
+              },
+              {
+                label: 'Cavebots Pronta-Entrega',
+                to: '/cavebots-pronta-entrega',
+              },
+              {
+                label: 'Pacotes',
+                to: '/pacotes',
+              },
+              {
+                label: 'Custom Icon',
+                to: '/custom-icon',
+              },
+            ],
           },
           {            
-            to: '/exemplo',
+            to: '/hotkeys',
             label: 'Hotkeys',
             position: 'right',
           },
