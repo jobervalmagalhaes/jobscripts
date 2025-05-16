@@ -20,10 +20,6 @@ Neste espaço, vamos compartilhar:
 
 Nosso objetivo é manter você sempre informado com conteúdos úteis, diretos e voltados para o que realmente importa: facilitar sua vida dentro do jogo com ferramentas automatizadas de qualidade.
 
-## Primeiros passos
-
-Se você ainda não conhece o projeto JOB Scripts, comece acessando a [página de tutorial](/docs/tutoriais) e explorando os nossos conteúdos.
-
 ---
 
 Nos acompanhe também nas redes sociais:
