@@ -1,0 +1,471 @@
+---
+title: Hotkeys
+description: Hotkeys para ElfBot NG. Tibia 8.6. JOB Scripts. Tibia Global, Baiak e etc.
+---
+# Hotkeys
+## Healing/Health HP Magia
+### Mage
+Com HP menor ou igual a 79% usará Exura Vita, com HP menor ou igual a 95% e maior ou igual a 80 usará Exura Gran. Fique a vontade para alterar ao seu gosto. 
+```js
+auto 200 listas 'Health Mage - JOBSCRIPTS' | if [$hppc <= 79] {say 'exura vita'} | if [$hppc <= 95 && $hppc >= 80] {say 'exura gran'}
+````
+### Paladin
+Com HP menor ou igual a 79% usará Exura San, com HP menor ou igual a 95% e maior ou igual a 80 usará Exura Gran. Fique a vontade para alterar ao seu gosto. 
+```js
+auto 200 listas 'Health RP - JOBSCRIPTS' | if [$hppc <= 79] {say 'exura san'} | if [$hppc <= 95 && $hppc > 80] {say 'exura gran'}
+````
+### Knight
+Com HP menor ou igual a 90% usará Exana Mort. Fique a vontade para alterar ao seu gosto. 
+```js
+auto 200 listas 'Health EK - JOBSCRIPTS' | if [$hppc < 90] {say 'exana mort'}
+````
+---
+## Potions
+### HP
+Vai usar potion em você quando estiver com Mana menor ou igual a 75%, pode mudar para quanto quiser. Para servers editados também podem ser runas.
+```js
+auto 100 listas 'Potion HP - JOBSCRIPTS' | if [$hppc <= 75] {useoncreature IDPOTION self}
+```
+IDS: ````7643```` - Ultimate Health Potion | ````239```` - Great Health Potion | ````7642```` - Great Spirit Potion
+### MP
+Vai usar potion em você quando estiver com HP menor ou igual a 75%, pode mudar para quanto quiser. Para servers editados também podem ser runas.
+```js
+auto 100 listas 'Potion MP - JOBSCRIPTS' | if [$mppc <= 75] {useoncreature IDPOTION self}
+```
+IDS: ````238```` - Great Mana Potion | ````7642```` - Great Spirit Potion | ````237```` - Strong Mana Potion | ````268```` - Mana Potion
+### HP/MP (Great Spirit Potion)
+Vai usar potion em você quando estiver com HP ou MP menor ou igual a 75%, pode mudar para quanto quiser. Para servers editados também podem ser runas.
+```js
+auto 100 listas 'Potion HP/MP - JOBSCRIPTS' | if [$hppc <= 75 || $mppc <= 75] {useoncreature 7642 self}
+```
+---
+## Health Friend (Sio, Res e UH)
+### Sio Friend
+Pode mudar para a % que quiser, abaixo está em 70%.
+```js
+auto 100 listas 'Sio Friend - JOBSCRIPTS' | safe sio 70 friend
+```
+### UH Friend
+Pode mudar para a % que quiser, abaixo está em 70%.
+```js
+auto 100 listas 'UH Friend - JOBSCRIPTS' | safe uhpc 70 friend
+```
+### Sio Party
+Pode mudar para a % que quiser, abaixo está em 70%.
+```js
+auto 100 listas 'Sio Party - JOBSCRIPTS' | foreach 'allplayers' $l {if [$l.party >= 3 && $l.hppc < 70] {say 'exura sio "$l.name'}}
+```
+### Sio All
+Vai dar sio em qualquer um na tela, não precisa estar em party nem ser friend. Pode mudar para a % que quiser, abaixo está em 70%.
+```js
+auto 200 listas 'Sio ALL - JOBSCRIPTS' | foreach 'screenplayers' $sio if [$sio.hppc <= 70 && $sio.isshootable] {say 'exura sio "$sio.name"'}
+```
+### Exura Gran Mas Res
+Vai dar mas res se algum amigo estiver até 3 sqm de você com vida baixa. Pode mudar para a % que quiser, abaixo está em 70%.
+```js
+auto 200 listas 'Area Res - JOBSCRIPTS' | foreach 'floorplayers' $exresres if [$exresres.isfriend && $exresres.hppc <= 70 && $exresres.distance <= 3] {say exura gran mas res}
+```
+### Exura Gran Mas Res (All)
+Vai dar mas res se algum jogador estiver até 3 sqm de você com vida baixa. Pode mudar para a % que quiser, abaixo está em 70%.
+```js
+auto 200 listas 'Area Res - JOBSCRIPTS' | foreach 'floorplayers' $exresres if [$exresres.hppc <= 70 && $exresres.distance <= 3] {say exura gran mas res}
+```
+---
+## Bless e Aol
+### Bless sempre que reconectar
+```js
+auto 200 listas 'Auto Blessings - JOBSCRIPTS' | if [$connected == 1 && $blessings != 1] {say !bless | wait 1000 | say !bless | wait 1000 | say !bless | set $blessings 1} | if [$connected == 0] {set $blessings 0}
+```
+### Bless a cada 30 segundos
+```js
+auto 200 listas 'Blessings - JOBSCRIPTS' | {say '!bless' | wait 30000}
+```
+### Aol sempre que estiver sem amuleto
+```js
+auto 200 listas 'Auto Aol - JOBSCRIPTS' | if [$amuletslot.id == 0] {say !aol | wait 1000}
+```
+---
+## Reconnect
+### Se morrer
+```js
+auto 200 listas 'Reconnect - JOBSCRIPTS' | if [$hp == 0] {reconnect | wait 5000}
+```
+### Se desconectar
+```js
+auto 200 listas 'Reconnect - JOBSCRIPTS' | if [$connected == 0] {reconnect | wait 5000}
+```
+### Se desconectar aleatório
+Igual a hotkey anterior, porém ele irá relogar em um tempo aleatório entre 30 segundos e 1 minuto e 30 segundos. Útil para não bugar no Server Save.
+```js
+auto 200 listas 'Reconnect - JOBSCRIPTS' | if [$connected == 0] {reconnect | wait $rand.30000.90000}
+```
+### Se morrer ou desconectar
+```js
+auto 200 listas 'Reconnect - JOBSCRIPTS' | if [$hp == 0 || $connected == 0] {reconnect | wait 5000}
+```
+### Se morrer ou desconectar aleatório
+Igual a hotkey anterior, porém ele irá relogar em um tempo aleatório entre 30 segundos e 1 minuto e 30 segundos.
+```js
+auto 200 listas 'Reconnect - JOBSCRIPTS' | if [$hp == 0 || $connected == 0] {reconnect | wait $rand.30000.90000}
+```
+---
+## Anti-idle
+Se você ficar parado por 3 minutos ou mais seu char começará a girar.
+```js
+auto 200 listas 'Anti-idle - JOBSCRIPTS' | if [$standtime >= 3*60*1000] {turnn | wait 1000 | turne | wait 1000 | turnw | wait 1000 | turns | say '' | wait 1000}
+```
+---
+## Dash
+Só adicionar as hotkeys por tecla em seus respectivos números.
+
+1 → ```movesw```
+
+2 → ```moves```
+
+3 → ```movese```
+
+4 → ```movew```
+
+6 → ```movee```
+
+7 → ```movenw```
+
+8 → ```moven```
+
+9 → ```movene```
+
+---
+## Displaymap
+Essa hotkey vai mostrar o mapa na sua tela.
+```js
+auto 1 listas 'Mapa - JOBSCRIPTS' | displaymap
+```
+---
+## Bugmap
+### WASD
+
+```js
+auto 1 listas 'Bugmap WASD - JOBSCRIPTS' | if [$key.65] {usegroundxyz [$posx-7] $posy $posz | end} | if [$key.68] {usegroundxyz [$posx+7] $posy $posz | end} | if [$key.83] {usegroundxyz $posx [$posy+6] $posz | end} | if [$key.87] {usegroundxyz $posx [$posy-6] $posz | end} | if [$key.67] {usegroundxyz [$posx+6] [$posy+5] $posz | end} | if [$key.90] {usegroundxyz [$posx-6] [$posy+5] $posz | end} | if [$key.81] {usegroundxyz [$posx-6] [$posy-5] $posz | end} | if [$key.69] {usegroundxyz [$posx+6] [$posy-5] $posz | end}
+```
+### Numpad
+```js
+auto 100 listas 'Bugmap NUMPAD - JOBSCRIPTS' | if [$key.100] {usegroundxyz [$posx-7] $posy $posz | end} | if [$key.102] {usegroundxyz [$posx+7] $posy $posz | end} | if [$key.98] {usegroundxyz $posx [$posy+6] $posz | end} | if [$key.104] {usegroundxyz $posx [$posy-6] $posz | end} | if [$key.99] {usegroundxyz [$posx+3] [$posy+3] $posz | end} | if [$key.97] {usegroundxyz [$posx-3] [$posy+3] $posz | end} | if [$key.103] {usegroundxyz [$posx-3] [$posy-3] $posz | end} | if [$key.105] {usegroundxyz [$posx+3] [$posy-3] $posz | end}
+```
+---
+## Manashield (Utamo Vita)
+### Padrão
+Renova sempre que você não tiver, ou seja, ela espera você perder a condição de ter manashield para falar novamente a magia.
+```js
+auto 100 listas 'ManaShield - JOBSCRIPTS' | if [$manashielded == 0] {say 'utamo vita'}
+```
+### 30 Segundos
+Renova a cada 30 segundos, ou seja, ela não espera você perder a condição de ter manashield para falar novamente a magia, sempre que se passarem 30 segundos ele fala novamente.
+```js
+auto 100 listas 'Utamo Vita 30seg - JOBSCRIPTS' | {say 'utamo vita' | wait [30*1000]}
+```
+---
+## Eat food
+### Todos os foods
+```js
+auto 200 listas 'EatFood - JOBSCRIPTS' | eatfood | wait 60000
+```
+### Custom Food/BP Fechada
+Você pode substituir o ID por qual desejar, no caso está do brown mushroom, ela usa o food com bp fechada.
+```js
+auto 200 listas 'Custom Food - JOBSCRIPTS' | wait 1000 | useitem 3725 | wait 60000
+```
+---
+## Usar 'x' item com 'x' stamina
+#### Opção 1
+Alguns itens podem não funcionar nessa hotkey devido a limitações do ElfBot NG em reconhecer itens modificados. Ela também funciona com a bp fechada.
+```js
+auto 200 listas 'Stamina Item - JOBSCRIPTS' | if [$formattime.$stamina <= '00:41:00'] {useitem IDITEM | wait 30000}
+```
+### Opção 2
+Diferente da 1ª hotkey, essa funciona em todos os itens, porém, precisa estar com a bp em que o item está aberta.
+```js
+auto 200 listas 'Stamina Item - JOBSCRIPTS' | if [$formattime.$stamina <= '00:41:00'] {openitem IDITEM | wait 30000}
+```
+### Opção 3
+Diferente da 1ª hotkey, essa funciona em todos os itens, porém, precisa estar com o item no slot do arrow.
+```js
+auto 200 listas 'Stamina Item - JOBSCRIPTS' | if [$formattime.$stamina <= '00:41:00'] {openbeltitem IDITEM | wait 30000}
+```
+---
+## Change gold
+### Gold
+```js
+auto 1500 listas 'Change Gold - JOBSCRIPTS' | if [$itemcount.3031 > 100] { openitem 3031 2 ''}
+```
+### Platinum
+```js
+auto 1500 listas 'Change Platinum - JOBSCRIPTS' | if [$itemcount.3035 > 100] { openitem 3035 2 ''} 
+```
+### Crystal
+```js
+auto 1500 listas 'Change Crystal - JOBSCRIPTS' | if [$itemcount.3043 > 100] { openitem 3043 2 ''}
+```
+### Change All
+```js
+auto 1500 listas 'Change Coin - JOBSCRIPTS' | if [$itemcount.3031 > 100] { openitem 3031 2 ''} | if [$itemcount.3035 > 100] { openitem 3035 2 ''} | if [$itemcount.3043 > 100] { openitem 3043 2 ''}
+```
+---
+## Auto runas (SD, Paralyze e Avalanche)
+### SD Targeting
+Vai atacar o seu targeting com SD.
+```js
+auto 200 listas 'SD Target - JOBSCRIPTS' | sd target
+```
+### Paralyze Targeting
+Vai atacar o seu targeting com Paralyze, porém ao chegar em 10% de mana irá desativar automaticamente, você pode mudar.
+```js
+auto 200 listas 'Paralyze Target - JOBSCRIPTS' | if [$mppc > 10] {if [$target.isfriend == 0 && $target.isshootable] {safe paralyze target}} else {turnoff}
+```
+### Auto Avalanche
+Vai atacar os monstros na sua tela com avalanche, se você tiver com mais de 70% de HP.
+```js
+auto 500 listas 'Auto Avalanche - JOBSCRIPTS' | foreach 'screenmonsters' $m if [$monstersaround.7 >= 1 && $hppc >= 70 && $m.isshootable] {ifnot [$m.name.'content' ? 'Warlock'] {attack $m.id | useoncreature 3161 target}}
+```
+### Magic Wall
+Ao apertar o scroll do mouse, vai abrir a mira para usar a mw, você pode substituir o ID 3180 para qualquer outra runa. Key 4 é a identificação do scroll do mouse.
+Confira a numeração das keys do teclado aqui: Keys Enumeração 
+```js
+auto 100 listas 'MW Scroll - JOBSCRIPTS' | if [$key.4] {crosshair 3180} 
+```
+---
+## Combos
+### Combo UE
+Coloque a mensagem que vai falar, o líder do combo e substitua a magia a depender da vocação.
+```js
+auto 200 listas 'Combo ue - JOBSCRIPTS' | foreach 'newmessages' $uejob if [$uejob.content == 'boom' && $uejob.sender == 'LÍDER DO COMBO'] {say 'exevo gran mas frigo'}
+```
+### Combo com guild chat
+Coloque o nome do(s) líder(es) do combo e abra o guild chat. A segunda hotkey é a do líder. (Não funciona em alguns servers).
+```js
+auto 10 set $lider1 'Leader 1' | set $lider2 'Leader 2' | set $lider3 'Leader 3' | listas 'Combando: [$target.name]' | setoutfit [$target.name] 47 | foreach 'newmessages' $msg if [$msg.sender == '$lider1' || $msg.sender == '$lider2' || $msg.sender == '$lider3' && $cutstr.'$msg.content'.1.1 == '.'] {attack $cutstr.'$msg.content'.2.100 | wait 1} | {setoutfit [$lider1] 107 | setoutfit [$lider2] 12 | setoutfit [$lider3] 88
+auto 100 listas 'LIDER COMBO' | if [$target.isfriend == 0] isattacking {guildsay '.$target.name' | wait 1000}
+```
+### Combo SD com guild chat
+Coloque o nome do(s) líder(es) do combo SD e abra o guild chat. A segunda hotkey é a do líder. (Não funciona em alguns servers).
+```js
+auto 10 listas 'SD COMBO' | set $lider1 'Leader 1' | set $lider2 'Leader 2' | foreach 'newmessages' $msg if [$msg.sender == '$lider1' || $msg.sender == '$lider2' && $cutstr.'$msg.content'.1.1 == '.'] {useoncreature 3155 $cutstr.'$msg.content'.2.100 | wait 1} | {setoutfit [$lider1] 107 | setoutfit [$lider2] 12}
+auto 100 listas 'LIDER COMBO' | guildsay '.$target.name' | wait 500 | sd target | turnoff
+```
+---
+## Travar Targeting
+Semelhante a famosa ```auto 1 attack target```, porém sem exhausted.
+```js
+auto 1 listas 'Travar Targeting - JOBSCRIPTS' | if [$target.isonscreen == 1 && $tagertt == 0] {attack target | set $tagertt 1} | if [$target.isonscreen == 0] {set $tagertt 0} | if [$target.isonscreen && $target.name == 0] {attack target} | if [$target.isonscreen && $attacked.name == 0] {attack target | wait 500}
+```
+---
+## Auto Mensagem (Trade, Help e etc)
+Basta substituir o 'Trade' por o canal que desejar e ele irá repetir a mensagem a cada 30 segundos.
+```js
+auto 200 listas 'Auto Channel MSG - JOBSCRIPTS' | {sayin 'Trade' 'MENSAGEM' | wait 30000}
+```
+---
+## Últimas mensagens na tela
+
+Você vai precisar ativar algumas opções no HUD:
+
+→ On-screen Info Enabled
+
+→ General Information
+
+→ Activated hotkeys/shortkeys
+
+→ Após ativar todas, clique em SAVE.
+
+```js
+auto 100 dontlist | listboxsetup 1 [3] [$screenbottom-10] 6 4500000 'up' | foreach 'newmessages' $list if [$list.isprivate && $list.sender != $name] { ifnot $list.isbotlook { listboxaddline 1 $setcolor 237 242 '$systime [$list.sender]: $list.content' }}
+```
+---
+## Exp/h para level 500 ou maior
+Você vai precisar ativar algumas opções no HUD:
+
+→ On-screen Info Enabled
+
+→ General Information
+
+→ Activated hotkeys/shortkeys
+
+Após ativar todas, clique em SAVE.
+
+Ela só atualiza de 5 em 5 minutos.
+
+Confira como fica: https://prnt.sc/266jnj1
+```js
+auto 200 dontlist | {set $expctrl 0 | turnoff}
+auto 200 dontlist | foreach 'newmessages' $exphtk if [$exphtk.content ? 'gained' && $exphtk.sender == 0] {set $expcalc [$token.'$exphtk.content'.3+$expcalc]}
+auto 200 dontlist | set $expcalc 0 | wait [5*60*1000] | set $expctrl $formatnum.[$expcalc*12]
+auto 100 dontlist | setpos [$screentop + 11] [$screentop + 36] | setcolor 191 191 191 | {displaytext "Exph 5m :  [$expctrl]"}
+```
+---
+## Contar amigos e inimigos
+```js
+foreach 'allplayers' $cntp if [$cntp.name != $self.name && $cntp.isfriend == 0] {setrelation [$cntp.name] [enemy]} | say 'Enemies: [$enemycount] - Friends: [$friendcount]' 
+```
+---
+## Usar pick ao redor
+```js
+auto 200 listas 'Random Pick - JOBSCRIPTS' | set $miner $rand.1.5 | if [$miner == 1] {useongroundxyz 3456 $posx [$posy-1] $posz} | if [$miner == 2] {useongroundxyz 3456 $posx [$posy+1] $posz} | if [$miner == 3] {useongroundxyz 3456 [$posx-1] $posy $posz} | if [$miner == 4] {useongroundxyz 3456 [$posx+1] $posy $posz} | if [$miner == 5] {useongroundxyz 3456 [$posx-1] [$posy-1] $posz}
+```
+---
+## Utana Vid
+```js
+auto 200 listas 'Utana Vid - JOBSCRIPTS' | goinvisible
+```
+---
+## Rings e Amuletos (Energy Ring, Might Ring, SSA...)
+### Energy Ring
+O 60 representa que em 60% de HP irá equipar o energy ring. O 90 representa que em 90% de HP irá desequipar o energy ring. Você pode substituir as porcentagens para o quanto quiser.
+```js
+auto 200 listas 'Energy Ring - JOBSCRIPTS' | if [$hppc <= 60] {equipring 3051} | if [$hppc => 90] {unequip 'ring' 'empty'}
+```
+### Alternar Energy Ring
+O 60 representa que em 60% de HP irá equipar o energy ring. O 90 representa que em 90% de HP irá desequipar o energy ring e equipar o ring de sua preferência, basta colocar o ID onde indica na hotkey. Você pode substituir as porcentagens para o quanto quiser.
+```js
+auto 100 listas 'Change Ring - JOBSCRIPTS' | if [$hppc <= 60] {equipring 3051} | if [$hppc => 90] {equipring IDRING}
+```
+### Might Ring Full
+A hotkey irá puxar continuadamente Might Ring sempre que acabar, mas você precisa estar com backpack aberta e sem nenhum ring equipado.
+```js
+auto 100 listas 'Might Ring - JOBSCRIPTS' | if [$ringslot.id != 3048] {equipring 3048}
+```
+### SSA Full
+A hotkey irá puxar continuadamente SSA sempre que acabar, mas você precisa estar com backpack aberta e sem nenhum amuleto equipado.
+```js
+auto 20 listas 'SSA - JOBSCRIPTS' | if [$ammyslot.id != 3081] {equipammy 3081}
+```
+---
+## Exiva
+### Last
+Fica exivando o último que você exivou a cada 3 segundos
+```js
+auto 3000 listas 'Exiva Last - JOBSCRIPTS' | exivalast
+```
+### Target
+Exiva seu target a cada 3 segundos
+```js
+auto 3000 listas 'Exiva Target - JOBSCRIPTS' | exivatarget
+```
+---
+## Anti-Push
+### Gold e Platinum
+```js
+auto 100 listas 'Anti-Push - JOBSCRIPTS' | ifnot [$topitem.$posx.$posy.$posz == 3035 || $topitem.$posx.$posy.$posz == 3031] {dropitemsxyzamount $posx $posy $posz 3031 $rand.1.3} | ifnot [$topitem.$posx.$posy.$posz == 3035 || $topitem.$posx.$posy.$posz == 3031] {dropitemsxyzamount $posx $posy $posz 3035 $rand.1.2}
+```
+### Gold, Platinum e Worms
+```js
+auto 100 listas 'Anti-Push - JOBSCRIPTS' | ifnot [$topitem.$posx.$posy.$posz == 3035 || $topitem.$posx.$posy.$posz == 3031 || $topitem.$posx.$posy.$posz == 3492] {dropitemsxyzamount $posx $posy $posz 3031 $rand.1.3} | ifnot [$topitem.$posx.$posy.$posz == 3035 || $topitem.$posx.$posy.$posz == 3031 || $topitem.$posx.$posy.$posz == 3492] {dropitemsxyzamount $posx $posy $posz 3035 $rand.1.3} |  | ifnot [$topitem.$posx.$posy.$posz == 3035 || $topitem.$posx.$posy.$posz == 3031 || $topitem.$posx.$posy.$posz == 3492] {dropitemsxyzamount $posx $posy $posz 3492 $rand.1.3}
+```
+---
+## Coletar ou dropar itens
+### Coletar
+Vai coletar qualquer item do chão a 1 sqm de distância, basta preencher com os IDS igual o exemplo que está dos golds.
+Se preferir que ele colect para uma backpack específica, basta trocar o 'empty' pelo nome da backpack, ex.: 'beach backpack'.
+```js
+auto 100 listas 'Collect - JOBSCRIPTS' | collectitems 'empty' 3031 3035 3043
+```
+### Dropar
+Só preencher os IDS dos itens na lista, seguindo o exemplo abaixo. Ela não dropa itens do seu inventário, apenas da backpack.
+```js
+auto 100 listas 'Drop items - JOBSCRIPTS' | dropitems 3031 3035 3043
+```
+---
+## Magias de correr
+### Normal
+```js
+auto 100 listas 'Haste  - JOBSCRIPTS' | if [$inpz == 0 && $hasted == 0] {say 'utani hur'}
+```
+### Sem monstro na tela
+```js
+auto 100 listas 'Haste S/Monster - JOBSCRIPTS' | if [$inpz == 0 && $hasted == 0 && $monstersaround.9 == 0] {say 'utani hur'}
+```
+### Se não estiver atacando
+```js
+auto 100 listas 'Haste S/Attack - JOBSCRIPTS' | if [$inpz == 0 && $hasted == 0] {isnotattacking say 'utani hur'}
+```
+### Com cura de paralyze (Exura Gran Mas Res)
+```js
+auto 100 listas 'Haste Mas Res - JOBSCRIPTS' | if [$inpz == 0 && $hasted == 0 && $paralyzed == 0] {say 'utani gran hur'} | if [$paralyzed == 1] {say 'exura gran mas res'}
+```
+### Com cura de paralyze (UH)
+```js
+auto 100 listas 'Haste UH - JOBSCRIPTS' | if [$inpz == 0 && $hasted == 0 && $paralyzed == 0] {say 'utani gran hur'} | if [$paralyzed == 1] {useoncreature 3160 self}
+```
+---
+## Utito Tempo/San
+### Knight
+Troque o 120 pelo seu skill com utito, ex.: ao usar utito tempo, seu skill vai para 120. Depois só precisa mudar se o seu skill normal ultrapassar.
+Não esqueça de mudar para o seu item, club, axe ou sword.
+```js
+auto 200 listas 'Utito Tempo - JOBSCRIPTS' | if [$skill.sword < 120 && $target.isshootable && $mp >= 290] {say 'utito tempo'}
+```
+### Paladin
+​Troque o 120 pelo seu skill com utito, ex.: ao usar utito tempo tempo san, seu distance vai para 120. Depois só precisa mudar se o seu skill normal ultrapassar.
+```js
+auto 200 listas 'Utito Tempo San - JOBSCRIPTS' | if [$skill.distance < 120 && $target.isshootable && $mp >= 450] {say 'utito tempo san'}
+```
+---
+## Exeta Res
+Vai renovar o exeta res a cada 2 segundos se tiver monstros ao seu redor.
+```js
+auto 100 listas 'Exeta Res - JOBSCRIPTS' | if [$monstersaround.1 >= 1 && $mp >= 40] {safe say 'exeta res' | wait 2000}
+```
+---
+## Parar cavebot se fragar
+Essa hotkey para apenas o CAVEBOT e o que estiver dentro dele, não tem poder para parar nada fora dele.
+```js
+auto 100 listas 'Desligar se Fragar - JOBSCRIPTS' | foreach 'newmessages' $ctrl_frag if [$ctrl_frag.content ? 'Warning! The murder of' && $ctrl_frag.isredtext] {setcavebot off}
+```
+---
+## UE - Todas as vocações
+Se pegar frag bloqueia permanente a hotkey de ue;
+Se pegar skull bloqueia a hotkey de ue.
+### Proteções
+```js
+auto 50 dontlist | foreach 'newmessages' $var_warning if [$var_warning.content ? 'Warning! The murder of' && $var_warning.isredtext] {setcavebot off}
+auto 50 dontlist | foreach 'newmessages' $var_warning2 if [$var_warning2.content ? 'Warning! The murder of' && $var_warning2.isredtext] {set $frag_stop 1}
+auto 100 dontlist | foreach 'allplayers' $var_floor if [($var_floor.posz == ($posz+1) || $var_floor.posz == ($posz-1) || $var_floor.posz == $posz) && $var_floor.name != $name] {set $floor_return 1} else {set $floor_return 0}
+auto 50 dontlist | if [$floor_return == 1 || $frag_stop == 1 || $playersaround.9 == 1 || $self.skull == 3] {set $protection_var 1} else {set $protection_var 0}
+auto 200 dontlist | setcolor 191 191 191 | setpos [$screenleft-190] [$screentop+60] | if [$frag_stop == 0] {if [$protection_var != 0] {displaytext 'Magic Blocked: Yes'} else {displaytext 'Magic Blocked: No'}} else {displaytext 'The hotkey stopped because you got frag.'}
+```
+### Reset de proteção
+Quando você pegar Frag a hotkey de UE vai ser pausada para sempre, para reativar ela você tem que reiniciar o bot ou ativar essa hotkey.
+```js
+auto 200 listas 'Reseting Ue - JOBSCRIPTS' | {set $frag_stop 0 | wait 1000 |  turnoff} 
+```
+### Mage
+```js
+auto 200 dontlist | if [$monstersaround.4 >= 2 && $mp >= 1300 && $target.isshootable && $targetingon && $protection_var != 1] {set $control_spell 1 | say 'exevo gran mas vis'} else {set $control_spell 0}
+```
+### Exori Frigo/Flam/Vis/Tera
+Essa não será usada caso a proteção for ativada.
+Só é usado caso não seja possível usar a UE.
+```js
+auto 200 dontlist | if [$control_spell == 0 && $target.ismonster && $target.isshootable && $target.hppc >= 1 && $target.distance <= 3 && $frag_stop == 0] {say 'exori frigo'}
+```
+### SD
+Só é usado caso não seja possível usar a UE.
+```js
+auto 200 dontlist | if [$control_spell == 0 && $target.ismonster && $target.isshootable && $target.hppc >= 1 && $targetingon] {sd target}
+```
+### Knight
+```js
+auto 200 dontlist | if [$monstersaround.1 >= 2 && $mp >= 400 && $target.isshootable && $targetingon && $protection_var != 1] {set $control_spell 1 | say 'exori gran'} else {set $control_spell 0}
+```
+### Exori Hur
+Só é usado caso não seja possível usar a UE.
+```js
+auto 200 dontlist | if [$control_spell == 0 && $target.ismonster && $target.isshootable && $target.hppc >= 1 && $target.distance <= 3] {say 'exori hur'}
+```
+### Paladin
+```js
+auto 200 dontlist | if [$monstersaround.3 >= 2 && $mp >= 450 && $target.isshootable && $targetingon && $protection_var != 1] {set $control_spell 1 | say 'exevo mas san'} else {set $control_spell 0}
+```
+### Exori Con
+Só é usado caso não seja possível usar a UE.
+```js
+auto 200 dontlist | if [$control_spell == 0 && $target.ismonster && $target.isshootable && $target.hppc >= 1 && $target.distance <= 3] {say 'exori con'}
+```

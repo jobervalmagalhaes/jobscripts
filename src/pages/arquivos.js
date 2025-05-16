@@ -7,8 +7,8 @@ import styles from './arquivos.module.css';
 export default function ElfbotNG() {
   return (
     <Layout
-      title="ElfBot NG 4.5.9"
-      description="O melhor bot para versão 8.6. Funções: healing, aimbot, hotkeys, cavebot, navigation, targeting, proxy e icons."
+      title="Arquivos"
+      description="Download do ElfBot NG. O melhor bot para versão 8.6. Funções: healing, aimbot, hotkeys, cavebot, navigation, targeting, proxy e icons."
     >
       <main className="padding--lg">
         <div className="container">
