@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkjobscripts_site=self.webpackChunkjobscripts_site||[]).push([[1512],{5588:s=>{s.exports=JSON.parse('{"metadata":{"permalink":"/jobscripts-site/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

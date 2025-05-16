@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkjobscripts_site=self.webpackChunkjobscripts_site||[]).push([[8047],{4163:s=>{s.exports=JSON.parse('{"tags":[{"label":"jobscripts","permalink":"/jobscripts-site/blog/tags/jobscripts","description":"JOB Scripts tag description","count":1}]}')}}]);
