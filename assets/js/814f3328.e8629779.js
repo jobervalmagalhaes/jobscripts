@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkjobscripts_site=self.webpackChunkjobscripts_site||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Primeira Postagem do Blog","permalink":"/jobscripts-site/blog/primeira-postagem-do-blog","unlisted":false,"date":"2025-05-15T00:00:00.000Z"}]}')}}]);
