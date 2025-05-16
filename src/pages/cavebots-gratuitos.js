@@ -1,37 +1,50 @@
 import React from 'react';
 import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
+import styles from './cavebots-gratuitos.module.css';
 import clsx from 'clsx';
 
-export default function Exemplo() {
+const bots = [
+  {
+    server: 'Kaldrox Global',
+    image: '/img/kaldrox.png',
+    description:
+      'Scripts gratuitos de cavebot otimizados para o servidor Kaldrox Global. Inclui suporte para cavebot, targeting, healing e anti-idle.',
+    downloadLink: '/kaldrox'
+  },
+  {
+    server: 'Em breve mais servidores',
+    image: '/img/jobscripts.png',
+    description:
+      'Em breve mais servidores.',
+    downloadLink: '#'
+  }
+  // Adicione mais bots aqui
+];
+
+export default function Cavebots() {
   return (
     <Layout
       title="Cavebots Gratuitos"
-      description="Página de scripts gratuitos do JOB Scripts">
-      <main className="container margin-vert--lg">
-        <div className="row">
-          <div className="col col--8 col--offset-2">
-            <h1 className="text--center">Cavebots Gratuitos</h1>
-            <p className="hero__subtitle text--center"> Aqui estarão os melhores servers parceiros do JOB Scripts.</p> 
-            <div className="card margin-top--lg">
-            <center>Por favor, selecione qual deseja baixar o nosso conteúdo gratuito:</center>
-          <div style={{ textAlign: 'center', margin: '3rem 0 1rem' }}>
-          <a
-            href="/kaldrox"
-            className="button button--primary button--sm"
-            style={{
-              fontSize: '2.5rem',
-              fontWeight: 700,
-              letterSpacing: '0.03em',
-              padding: '1rem 4rem',
-              borderBottom: '4px solid #222',
-              textDecoration: 'underline'
-            }}
-          >
-            Kaldrox Global
-          </a>
-          </div>
-        </div>
+      description="Coleção de cavebots gratuitos para diversos servidores ElfBot NG 8.6"
+    >
+      <main className="padding--lg">
+        <div className="container">
+          <h1 className="text--center margin-bottom--lg">Cavebots Gratuitos</h1>
+          <div className="row">
+            {bots.map((bot, index) => (
+              <div key={index} className={clsx('col col--6 margin-bottom--lg')}>
+                <div className={styles.card}>
+                  <img src={bot.image} alt={bot.server} className={styles.image} />
+                  <div className={styles.content}>
+                    <h3>{bot.server}</h3>
+                    <p>{bot.description}</p>
+                    <a href={bot.downloadLink} className="button button--primary button--sm">
+                      Baixar Scripts
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </main>
