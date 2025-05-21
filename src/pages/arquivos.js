@@ -32,12 +32,8 @@ export default function ElfbotNG() {
                 <li>Instalador já ativado, apenas instalar e usar.</li>
                 <li>
                   <strong>Aprenda a baixar e instalar:</strong><br />
-                  <a
-                    href="https://www.youtube.com/watch?v=OcCh-lVQl6A"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    https://www.youtube.com/watch?v=OcCh-lVQl6A
+                  <a href="/docs/tutoriais/como-baixar-e-instalar-o-elfBot-ng" rel="noopener noreferrer">
+                    Como baixar e instalar o ElfBot NG
                   </a>
                 </li>
               </ul>
