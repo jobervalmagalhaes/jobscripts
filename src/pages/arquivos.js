@@ -47,7 +47,7 @@ export default function ElfbotNG() {
           {/* Botão de Download */}
           <div className="text--center margin-vert--lg">
             <a
-              href="#"
+              href="/downloads/elfbot-ng-4.5.9-setup.exe"
               className="button button--primary button--lg"
             >
               BAIXAR
