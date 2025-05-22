@@ -1,0 +1,108 @@
+---
+title: Cavebots privados
+description: Cavebots privados, faça do seu jeito, escolha tudo que você quiser e puder ser feito no ElfBot NG.
+---
+# Cavebots privados
+- Adquira seu cavebot/script 100% AFK, otimize seu tempo, entre apenas para se divertir com a galera e deixe sua caça mais legal!
+- Você pode escolher a cidade inicial, a cave que você quer, tudo com recursos profissionais e testados por uma comunidade que conhece e confia no meu trabalho.
+
+## Algumas das funções que podem/estão nos cavebots:
+- Vocações, magias, runas, identificação de situações automatizadas.
+- Fuga com tempo, morte, jogadores, guilds que estão na sua tela.
+- Proteções de floor, player, skull, frags, mortes, aol, bless, dentre outras. Todas testadas e comprovadas.
+- Opções de caçar PK com limite de frags.
+- Usar, guardar em casa, depositar, transferir dinheiro e itens.
+- Possíveis configurações de Task, Quests, Horas, Trainers, etc.
+- Configurações facilitadas para alterar informações de tempo, trainer, cast, magias, quantidade de compra e venda, dentre outras.
+- Definir circuitos dentro de um mesmo cavebot, com várias rotações e/ou andares diferentes com intuito de randomizar e diversificar o up.
+- Detecção de bugs com tentativa de saída de parcel, caixas, baús, etc. Configurações pré-hunt com sqms em cidades para você não ter problemas.
+
+<details>
+  <summary>
+    <h3>Exemplo de configurações que podem haver em um cavebot</h3>
+  </summary>
+  ````js
+================================= CONFIGURAÇÕES ========================================
+set $Vocacao 'Auto' // Caso necessário mude para: Sorcerer, Druid, Paladin ou Knight.
+set $Magia_Area 'Sim' // Usar magia em área?
+set $Protecao_Andares 'Sim' // Confere andares para usar magias em área.
+set $Monstros_MagiaArea '2' // Usar magias em área partir de quantos montros?
+set $Cacar_Sozinho 'Nao' // Caçar apenas se não tiver outros players na tela?
+set $Cacar_Se_UE 'Nao' // Vai caçar apenas se puder dar magia em área.
+set $MonstrosLigar_Target '1' // Ligar o target com quantos monstros?
+set $MonstrosDesLigar_Target '0' // Desligar o target com quantos monstros?
+set $SegundosLigar_Target '2' // Quantos segundos depois ligar o target após desligar?
+set $Magia_Treinando 'Sim' // Se vai usar magia quando for para o treinador.
+set $ManaSafe 'Nao' // Em pontos específicos da hunt ele vai encher a mana até 70%.
+
+================================== CONFIG. PK
+set $Esperar_SairPK 'Sim' // Se não, ele continua caçando sem magia em área.
+set $Limite_PK '10' // Limite de vezes que pode pegar pk.
+set $Limite_PKDesligar 'Nao' // Se não, ele continua caçando sem magia em área.
+set $CacarPK 'Nao' // Usa magia de area com jogadores na tela. (Caçar dando pk.)
+set $Limite_Frags '1' // Limite de frags se for caçar PK. (Apenas se for caçar pk.)
+
+================================= CONFIG. MORTES
+set $Limite_Mortes '2' // Limite de vezes que pode morrer e voltar a caçar.
+set $Tempo_Morte '25' // Tempo em minutos para voltar a caçar se morrer.
+
+=========================== CONFIG. STAMINA & TREINER
+set $Stamina_Treiner '14' // Quantas horas de stamina ir para o treiner regenerar?
+set $Stamina_SairTreiner '42' // Quantas horas de stamina voltar a caçar?
+set $Stamina_Room 'Nao' // Se vai para a !staminaroom, necessário ter ticket ativado.
+set $Treinar_ML 'Nao' // Se vai treinar ml quando for recuperar a stamina.
+
+================================= CONFIG. ANTI-DROP
+set $Usar_Aol 'Sim' // Usar o comando !aol se estiver sem amuleto?
+set $Usar_Bless 'Sim' // Usar o comando !bless?
+
+================================ CONFIG. ROTAS & LOOT
+set $Rota '0' // Escolha uma rota de 1 a 2 ou deixe 0 para aleatório.
+set $Vender_Loot 'Sim' // Vai vender loot?
+set $SairCom_CAP 'Nao' // Sair com cap determinado?
+set $CAP_Sair '200' // Com quanto de cap sair para vender o loot?
+
+=============================== OUTRAS CONFIGURAÇÕES
+set $Ligar_Cast 'Nao' // Vai ligar cast?
+set $Cast_Senha 'SENHADOCAST' // Se não quiser senha deixe em branco.
+set $E_Ring 'Nao' // Se vai usar energy ring.
+set $HPEnergy '80' | set $HPEnergy_Tirar '95' // Quanto de HP para colocar e retirar o Energy Ring.
+set $ERing '0' // Coloque o ID do seu ring para alternar com o energy ring, caso não tenha, deixe 0.
+set $Depositar_MightRing 'Nao' // Se vai depositar might ring no depot.
+set $Depositar_SSA 'Nao' // Se vai depositar SSA no depot.
+
+================================= CONFIG. MAGES
+set $ED_Magia 'Exevo Gran Mas Frigo' // Escolha que magia em área usar de Druid.
+set $MS_Magia 'Exevo Gran Mas Vis' // Escolha que magia em área usar de Sorcerer.
+set $Great_Mana_Comprar '500'
+set $Great_Mana_Sair '300'
+set $SD_Comprar '500' // Deixe em 0 para substituir por magia.
+set $SD_Sair '300' // Deixe em 0 para substituir por magia.
+
+================================= CONFIG. PALADIN
+set $Great_Spirit_Comprar '500'
+set $Great_Spirit_Sair '200'
+set $Strong_Mana_Comprar '0'
+set $Strong_Mana_Sair '0'
+
+================================== CONFIG. KNIGHT
+set $Ultimate_Health_Comprar '300'
+set $Ultimate_Health_Sair '150'
+set $Great_Health_Comprar '0'
+set $Great_Health_Sair '0'
+set $Mana_Potion_Comprar '500'
+set $Mana_Potion_Sair '150'
+set $Usar_Utito 'Nao' // Usar utito tempo?
+set $Skill_Utito '150' // Coloque seu skill com utito. Só precisa alterar quando seu skill normal for igual ou maior.
+set $Atk_Item 'Sword' // Coloque seu item de ataque para funcionar o Utito. Axe, Sword ou Club.
+
+````
+</details>
+
+- Nos scripts privados você tem a liberdade de poder adicionar o que quiser que puder ser feito dentro do ElfBot.
+- O valor do script pode variar conforme o tipo e a complexidade do script desejado.
+
+## Ficou interessado? Entre em contato:
+<a href="/contatos" className="button button--primary button--lg button--block">
+  Fale comigo
+</a>

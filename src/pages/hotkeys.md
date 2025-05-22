@@ -27,7 +27,9 @@ Vai usar potion em você quando estiver com Mana menor ou igual a 75%, pode muda
 auto 100 listas 'Potion HP - JOBSCRIPTS' | if [$hppc <= 75] {useoncreature IDPOTION self}
 ```
 :::info IDS 
-````7643```` - Ultimate Health Potion | ````239```` - Great Health Potion | ````7642```` - Great Spirit Potion
+``7643`` - Ultimate Health Potion;
+``239`` - Great Health Potion;
+``7642`` - Great Spirit Potion.
 :::
 
 ### MP
@@ -36,7 +38,10 @@ Vai usar potion em você quando estiver com HP menor ou igual a 75%, pode mudar 
 auto 100 listas 'Potion MP - JOBSCRIPTS' | if [$mppc <= 75] {useoncreature IDPOTION self}
 ```
 :::info IDS 
-````238```` - Great Mana Potion | ````7642```` - Great Spirit Potion | ````237```` - Strong Mana Potion | ````268```` - Mana Potion
+``238`` - Great Mana Potion;
+``7642`` - Great Spirit Potion;
+``237`` - Strong Mana Potion;
+``268`` - Mana Potion.
 :::
 
 ### HP/MP (Great Spirit Potion)
