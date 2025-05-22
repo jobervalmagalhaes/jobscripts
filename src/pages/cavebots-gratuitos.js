@@ -11,14 +11,13 @@ const bots = [
       'Scripts gratuitos de cavebot otimizados para o servidor Kaldrox Global. Inclui suporte para cavebot, targeting, healing e anti-idle.',
     downloadLink: '/kaldrox'
   },
-  {
+  /*{
     server: 'Em breve mais servidores',
     image: '/img/jobscripts.png',
     description:
       'Em breve mais servidores.',
     downloadLink: '#'
-  }
-  // Adicione mais bots aqui
+  },*/
 ];
 
 export default function Cavebots() {
@@ -39,7 +38,7 @@ export default function Cavebots() {
                     <h3>{bot.server}</h3>
                     <p>{bot.description}</p>
                     <a href={bot.downloadLink} className="button button--primary button--sm">
-                      Baixar Scripts
+                      Baixar scripts
                     </a>
                   </div>
                 </div>

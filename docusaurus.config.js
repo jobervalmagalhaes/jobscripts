@@ -1,35 +1,16 @@
-// @ts-check
-// As anotações JSDoc com `@type` permitem autocompletar no editor e checagem de tipos
-// (quando combinadas com `@ts-check`).
-// Existem várias formas equivalentes de declarar a configuração do Docusaurus.
-// Veja: https://docusaurus.io/docs/api/docusaurus-config
-
 import {themes as prismThemes} from 'prism-react-renderer';
-
-// Este código roda no Node.js - Não use código do lado do cliente aqui (APIs do navegador, JSX...)
 
  /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'JOB Scripts',
   tagline: 'Scripts, hotkeys, custom e muito mais para ElfBot NG.',
   favicon: 'img/favicon.ico',
-
-  // Defina aqui a URL de produção do seu site
   url: 'https://jobervalmagalhaes.github.io',
-  // Defina o caminho /<baseUrl>/ sob o qual seu site será servido
-  // Para implantação no GitHub Pages, normalmente é '/<nomeDoProjeto>/'
   baseUrl: '/',
-
-  // Configuração de implantação no GitHub Pages.
-  // Se você não estiver usando o GitHub Pages, não precisa disso.
-  organizationName: 'jobervalmagalhaes', // Normalmente o nome do seu usuário ou organização no GitHub.
-  projectName: 'jobervalmagalhaes.github.io', // Normalmente o nome do repositório.
-
-  onBrokenLinks: 'throw', // Lança erro em links quebrados
-  onBrokenMarkdownLinks: 'warn', // Apenas avisa em links Markdown quebrados
-
-  // Mesmo que você não use internacionalização, pode usar este campo
-  // para definir metadados úteis, como o idioma do HTML.
+  organizationName: 'jobervalmagalhaes',
+  projectName: 'jobervalmagalhaes.github.io',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
   i18n: {
     defaultLocale: 'pt-BR',
     locales: ['pt-BR'],
@@ -42,8 +23,6 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Altere isso para o seu repositório.
-          // Remova para tirar os links de "editar esta página".
           //editUrl:
             //'https://github.com/jobervalmagalhaes/jobervalmagalhaes.github.io/tree/main/packages/create-docusaurus/templates/shared/',
         },
@@ -53,8 +32,6 @@ const config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Altere isso para o seu repositório.
-          // Remova para tirar os links de "editar esta página".
           //editUrl:
             //'https://github.com/jobervalmagalhaes/jobervalmagalhaes.github.io/tree/main/packages/create-docusaurus/templates/shared/',
           // Opções úteis para reforçar boas práticas de blog
@@ -72,7 +49,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Substitua pela imagem de destaque do seu projeto
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'JOB Scripts',
@@ -184,7 +160,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Todos os direitos reservados. © ${new Date().getFullYear()} <strong>JOB Scripts</strong>.<br>Tecnologia do Facebook.`,
+        copyright: `Todos os direitos reservados. © 2020 - ${new Date().getFullYear()} <strong>JOB Scripts</strong>.`,
       },
       prism: {
         theme: prismThemes.github,

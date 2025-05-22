@@ -1,0 +1,25 @@
+/* src/pages/iconesSociais.module.css */
+.socialLinksContainer {
+  display: flex; /* Alinha os ícones horizontalmente */
+  flex-wrap: wrap; /* Permite que quebrem a linha se não couberem */
+  gap: 15px; /* Espaçamento entre os ícones */
+  justify-content: left; /* Centraliza o grupo de ícones, opcional */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.socialLink {
+  display: inline-block; /* Para que o link se comporte como um bloco para o ícone */
+  transition: transform 0.2s ease-in-out;
+}
+
+.socialLink:hover {
+  transform: scale(1.1); /* Efeito de zoom suave no hover */
+}
+
+.socialIconImage {
+  width: 48px; /* Ajuste o tamanho conforme necessário */
+  height: 48px; /* Ajuste o tamanho conforme necessário */
+  border-radius: 8px; /* Bordas arredondadas como na sua imagem */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil, opcional */
+}
