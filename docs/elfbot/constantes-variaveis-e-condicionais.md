@@ -459,8 +459,6 @@ $screenbottom: ele retornará o número correto para posicionar um texto na part
 
 ``$mostshot.'targetgroup'``: por **exemplo**, ``auto 100 set $i $mostshot.'enemy mage'``, ele irá verificar a criatura que recebeu mais tiros rúnicos de morte súbita nos últimos dois segundos, o grupo alvo pode ser: enemy/subenemy/friend/subfriend, e gravar na variável 'i'. Caso não queira definir vocação, pode usar da seguinte forma, ``auto 100 set $i $mostshot.'enemy'``, o grupo da vocação pode ser: sorcerer/druid/knight/paladin/mage/nonmage
 
----
-
 ## Variáveis
 ### Jogador
 ``self``: você mesmo (por **exemplo**, ``useoncreature 3191 self``)
@@ -835,8 +833,6 @@ Em alguns casos as funções nativas como .ishelp, .istrade e outros, não funci
 
 ``setrelation {playername} {relation} {priority}``: permite sinalizar jogadores em tempo real como sub/inimigo/amigo, de acordo com as condições que você impõe (por **exemplo**, ``setrelation '$attacker.name' 'enemy'``)
 
----
-
 ## Condicionais
 ### Relacionado ao cavebot
 ``islocation``: irá executar uma determinada ação apenas se estiver na localização exata do waypoint de ação
@@ -986,5 +982,6 @@ Para entender melhor as variáveis, teste cada uma você mesmo alterando alguns 
 
 ``?``: stringpos, retorna a posição de *string2* dentro da *string1*, ou 0 se *string2* não estiver presente lá: ``[string1 ? string2]`` (por **exemplo**, ``if [$curmsg.content ? 'soft'] {playsound tradealarm.wav}``, ele vai tocar o som *tradealarm.wav*, se você receber uma mensagem contaminando a palavra soft, como  'sell soft boots', 'buy soft boots and boots of haste, (porque retornará uma posição não-zero e o se será avaliado como verdadeiro)
 
----
+:::tip
 Seguindo as boas práticas, para que ficar um código mais legível, siga sempre a forma ética de se formatar os códigos, por **exemplo**, ``if [$variável] {say 'Olá'}``, evite fazer dessa forma: ``if [$variável] say Olá``, usar sempre os colchetes, chaves, aspas, e afins, fica mais agradável até para você entender. Durante a tradução desse conteúdo percebi que quem o fez talvez não se importe muito, mas é o ideal e agradável.
+:::

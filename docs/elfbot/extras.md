@@ -22,9 +22,8 @@ description: Menu Extras do ElfBot NG, traduzidas pelo JOB Scripts.
 - **Load last skin**: Carrega a última skin do ElfBot usada.
 - **Non-pvp mode**: Ignora jogadores, usa magia em área, etc. Como se estivéssemos jogando um servidor NON-PVP *(Para eles é útil)*. **Não marque em servidores PVP**.
 
----
-## Recomendação do JOB
-Recomendo o uso de poucas opções aqui, pois muitas atrapalham o nosso cavebot 100% afk.]
+:::tip  Recomendações
+Recomendo o uso de poucas opções aqui, pois muitas atrapalham o nosso cavebot 100% afk.
 
 Utilize apenas:
 1. Framerate booster
@@ -35,3 +34,4 @@ Utilize apenas:
 6. Load last skin
 
 Todo o restante, não use se não souber de sua verdadeira necessidade.
+:::

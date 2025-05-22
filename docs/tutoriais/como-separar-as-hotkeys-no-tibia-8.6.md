@@ -9,4 +9,4 @@ Neste vídeo estarei ensinando a separar as hotkeys nos seus clientes de **tibia
 <iframe width="100%" height="500" src="https://www.youtube.com/embed/zGjMI8fdmyE?si=FdJLGoqvortb4lcg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Links utilizados no Tutorial:
-1. https://notepad-plus-plus.org/downloads/
+1. [Download do Notepad++](https://notepad-plus-plus.org/downloads/)

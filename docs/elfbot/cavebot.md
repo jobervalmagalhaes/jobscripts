@@ -42,20 +42,18 @@ Após clicar, um item é adicionado com as seguintes opções:
 - **Show labels**: Quando um waypoint tem um rótulo adicionado, seu rótulo é exibido em vez de coordenadas. Uma opção útil, de preferência ter um ainda selecionado.
 - **Follow waypoints**: liga cavebot e assim - alarmes, waypoints, scripts e saques.
 
-### Dicas e informações úteis
+:::tip DICAS
 1. Recomenda-se usar um *node* sem a opção de pular waypoints.
 2. Para executar ações importantes, que não sejam andar pela cave, recomendo usar o stand, ao usar o node ou outro similar, pode haver erros como pular waypoints significativos, não subir escadas/portais, etc.
 3. Para entrar nas escadas, ficamos diante delas como se quiséssemos entrar nelas e, por exemplo, quando clicamos na seta para cima, estamos entrando nelas. Se eles estiverem acima de nós, escolhemos “emplacement: north” e clicamos em stand, para que então ele o suba.
 4. Os waypoints são adicionados após o waypoint atualmente selecionado.
 5. Os waypoints são retornados do waypoint atualmente selecionado.
-
----
+:::
 
 ## Cavebot Hotkeys
 
 Após clicar em **Edit** uma janela com os scripts atribuídos aos waypoints é exibida. Cada script é adicionado em uma linha separada. Após colar, clique em *Save/Restart*. Para atribuir scripts a waypoints em uma constante, salve as configurações no painel de configurações.
 
----
 
 ## Looting
 
@@ -70,8 +68,6 @@ Para adicionar um item ao loot, primeiro clique em **< New Entry >** e depois en
 
 Para remover o item do loot, marque-o e clique em **Del**.
 
----
-
 ## Saving & Load Settings
 Usado para salvar o cavebot inteiro.
 
@@ -80,8 +76,6 @@ Primeiro, digite o nome ou pesquise e clique em um dos botões.
 - **Edit**: a janela de edição de configurações é exibida. Aqui podemos digitar manualmente os waypoints, o que não recomendo. Quando alguém nos envia waypoints em forma de texto, nós os colamos aqui e depois clicamos em Load Script . Então você pode salvar. Por exemplo, as opções de configurar meus scripts está em cavebot hotkeys.
 - **Save**: salva os dados atuais com o nome inserido ou pesquisado anteriormente.
 - **Load**: carrega as configurações selecionadas no momento.
-
----
 
 ## Alerts
 Os alarmes são usados para nos informar, parar o cavebot ou desligar o cliente do jogo.
@@ -97,8 +91,6 @@ Os alarmes são usados para nos informar, parar o cavebot ou desligar o cliente 
 - **Default chat msg**: quando recebe uma mensagem no canal *default*.
 - **Private chat msg**: quando recebe uma mensagem privada.
 - **Disconnected**: quando é desconectado.
-
----
 
 ## Options
 ### Use Rope

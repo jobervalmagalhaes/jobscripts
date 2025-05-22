@@ -20,7 +20,9 @@ O HUD é dividido em 2 partes:
 - **Cache player information**: informações sobre os jogadores serão salvas na pasta elfbot.
 - **Look and update cached entries**: bot atualizará os dados coletados se tivermos verificado as opções acima. Se, por exemplo, um jogador que não viu um dia pegou 10 níveis de experiência, o bot salvará novas informações para que os dados estejam atualizados.
 
+:::info
 Para salvar as alterações, clique em *Save* na página inicial do ElfBot.
+:::
 
 ## Display options
 - **On-screen Info Enabled**: Ativa as opções selecionadas.

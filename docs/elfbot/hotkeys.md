@@ -16,7 +16,9 @@ Em cada linha subsequente, inserimos os seguintes dados:
 - No lado direito, colamos/digitamos o script. Para editar o script devemos primeiro desmarcar a linha.
 
 #### Persistent
+:::note
 Certifique-se de que a caixa *persistent* esteja marcada/ativa.
+:::
 - Muito útil para, por exemplo, tratamento.
 - Nós colamos o script/hotkeys que nos cura e não estamos mais preocupados se o temos ativado porque ele é ativado quando as configurações são carregadas.
 - Cada script é inserido em uma linha separada.

@@ -26,13 +26,19 @@ Vai usar potion em você quando estiver com Mana menor ou igual a 75%, pode muda
 ```js
 auto 100 listas 'Potion HP - JOBSCRIPTS' | if [$hppc <= 75] {useoncreature IDPOTION self}
 ```
-IDS: ````7643```` - Ultimate Health Potion | ````239```` - Great Health Potion | ````7642```` - Great Spirit Potion
+:::info IDS 
+````7643```` - Ultimate Health Potion | ````239```` - Great Health Potion | ````7642```` - Great Spirit Potion
+:::
+
 ### MP
 Vai usar potion em você quando estiver com HP menor ou igual a 75%, pode mudar para quanto quiser. Para servers editados também podem ser runas.
 ```js
 auto 100 listas 'Potion MP - JOBSCRIPTS' | if [$mppc <= 75] {useoncreature IDPOTION self}
 ```
-IDS: ````238```` - Great Mana Potion | ````7642```` - Great Spirit Potion | ````237```` - Strong Mana Potion | ````268```` - Mana Potion
+:::info IDS 
+````238```` - Great Mana Potion | ````7642```` - Great Spirit Potion | ````237```` - Strong Mana Potion | ````268```` - Mana Potion
+:::
+
 ### HP/MP (Great Spirit Potion)
 Vai usar potion em você quando estiver com HP ou MP menor ou igual a 75%, pode mudar para quanto quiser. Para servers editados também podem ser runas.
 ```js
@@ -263,7 +269,9 @@ Você vai precisar ativar algumas opções no HUD:
 2. General Information
 3. Activated hotkeys/shortkeys
 
+:::warning
  Após ativar todas, clique em **SAVE**.
+:::
 
 ```js
 auto 100 dontlist | listboxsetup 1 [3] [$screenbottom-10] 6 4500000 'up' | foreach 'newmessages' $list if [$list.isprivate && $list.sender != $name] { ifnot $list.isbotlook { listboxaddline 1 $setcolor 237 242 '$systime [$list.sender]: $list.content' }}
@@ -275,9 +283,12 @@ Você vai precisar ativar algumas opções no HUD:
 2. General Information
 3. Activated hotkeys/shortkeys
 
+:::warning
  Após ativar todas, clique em **SAVE**.
+:::
+
 - Ela só atualiza de 5 em 5 minutos.
-- Confira como fica: https://prnt.sc/266jnj1
+- Confira como fica: [Print da tela](https://prnt.sc/266jnj1).
 ```js
 auto 200 dontlist | {set $expctrl 0 | turnoff}
 auto 200 dontlist | foreach 'newmessages' $exphtk if [$exphtk.content ? 'gained' && $exphtk.sender == 0] {set $expcalc [$token.'$exphtk.content'.3+$expcalc]}
@@ -399,7 +410,9 @@ auto 100 listas 'Exeta Res - JOBSCRIPTS' | if [$monstersaround.1 >= 1 && $mp >= 
 ```
 ---
 ## Parar cavebot se fragar
-Essa hotkey para apenas o CAVEBOT e o que estiver dentro dele, não tem poder para parar nada fora dele.
+:::danger
+Essa hotkey para apenas o **Cavebot** e o que estiver dentro dele, não tem poder para parar nada fora dele.
+:::
 ```js
 auto 100 listas 'Desligar se Fragar - JOBSCRIPTS' | foreach 'newmessages' $ctrl_frag if [$ctrl_frag.content ? 'Warning! The murder of' && $ctrl_frag.isredtext] {setcavebot off}
 ```
@@ -455,4 +468,5 @@ auto 200 dontlist | if [$control_spell == 0 && $target.ismonster && $target.issh
 ```
 #### Créditos
 Algumas hotkeys desta página foram feitas por:
-- Ciro Script, Davi Script;
+- [CiroScript](https://ciroscript.com);
+- [DaviScript](https://daviscript.com).
