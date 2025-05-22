@@ -4,23 +4,26 @@ description: Cavebots gratuitos do Kaldrox Global feitos pelo JOB Scripts.
 ---
 # Cavebots gratuitos - Kaldrox
 ## Informações do servidor
-import styles from './iconesSociais.module.css'; // Reutilizando o mesmo CSS de cima
+
+import Link from '@docusaurus/Link'; // Opcional, <a> normal funciona para links externos
+import styles from './social.module.css'; // Vamos criar este arquivo CSS
 
 <div className={styles.socialLinksContainer}>
-  {/* WhatsApp SVG (Exemplo bem simples) */}
-  <a href="https://wa.me/SEUNUMERO" target="_blank" rel="noopener noreferrer" className={styles.socialLink} title="WhatsApp">
-    <svg viewBox="0 0 24 24" className={styles.socialIconSvg} style={{backgroundColor: '#25D366', fill: 'white', borderRadius: '8px', padding: '4px'}}>
-      <path d="M16.75 13.96c.25.25.25.66 0 .91l-1.54 1.54c-.25.25-.66.25-.91 0s-.25-.66 0-.91l1.54-1.54c.25-.25.66-.25.91 0zm-3.42-3.42c-.25-.25-.66-.25-.91 0s-.25.66 0 .91l1.54 1.54c.25.25.66.25.91 0s.25-.66 0-.91l-1.54-1.54zm-3.67 3.67c.25.25.25.66 0 .91l-1.54 1.54c-.25.25-.66.25-.91 0s-.25-.66 0-.91l1.54-1.54c.25-.25.66-.25.91 0zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/> {/* Placeholder path */}
-    </svg>
+  <a href="https://chat.whatsapp.com/LZzSUx4EeMyGdXabKU5DDd" target="_blank" rel="noopener noreferrer" className={styles.socialLink} title="WhatsApp">
+    <img src="/img/whatsapp.png" alt="WhatsApp" className={styles.socialIconImage} />
   </a>
-
-  {/* Telegram SVG (Exemplo bem simples) */}
-  <a href="https://t.me/SEUUSUARIO" target="_blank" rel="noopener noreferrer" className={styles.socialLink} title="Telegram">
-    <svg viewBox="0 0 24 24" className={styles.socialIconSvg} style={{backgroundColor: '#0088cc', fill: 'white', borderRadius: '8px', padding: '4px'}}>
-      <path d="M9.78 18.65l.28-4.23.01-1.42c0-.16.05-.32.14-.45s.21-.23.36-.28l5.88-2.06c.27-.1.54.07.64.34.1.27-.07.54-.34.64l-4.93 1.73-1.49 4.84c-.05.16-.18.28-.34.33-.04.01-.08.02-.12.02-.13 0-.25-.06-.33-.17-.1-.13-.11-.3-.03-.44zM4.86 9.07L19.14 4.4c.3-.09.6.06.69.36.01.03.01.05.01.08l-3.52 12.11c-.09.3-.36.5-.66.5-.05 0-.09-.01-.14-.02L4.16 11.4c-.3-.09-.47-.39-.38-.69.07-.23.27-.39.5-.44h.08z"/> {/* Placeholder path */}
-    </svg>
+  <a href="https://t.me/Kaldrox" target="_blank" rel="noopener noreferrer" className={styles.socialLink} title="Telegram">
+    <img src="/img/telegram.png" alt="Telegram" className={styles.socialIconImage} />
   </a>
-  {/* Adicione outros SVGs de forma similar */}
+  <a href="https://www.instagram.com/kaldroxserver/" target="_blank" rel="noopener noreferrer" className={styles.socialLink} title="Instagram">
+    <img src="/img/instagram.png" alt="Instagram" className={styles.socialIconImage} />
+  </a>
+  <a href="https://discord.com/invite/FqHeWwfmXH" target="_blank" rel="noopener noreferrer" className={styles.socialLink} title="Discord">
+    <img src="/img/discord.png" alt="Discord" className={styles.socialIconImage} />
+  </a>
+  <a href="https://www.youtube.com/@kaldroxotserver" target="_blank" rel="noopener noreferrer" className={styles.socialLink} title="YouTube">
+    <img src="/img/youtube.png" alt="YouTube" className={styles.socialIconImage} />
+  </a>
 </div>
 
 - **Tipo**: Global
@@ -31,27 +34,27 @@ import styles from './iconesSociais.module.css'; // Reutilizando o mesmo CSS de 
 
 <iframe width="360" height="215" src="https://www.youtube.com/embed/Yb-fXZC6xpI?si=o0i5T8uf95Nt_bs0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Informações
+## Informações dos cavebots
 - Menu configurável e explicado;
 - Multi-vocações;
 - ​Anti-drop com comandos de bless e aol;
-- Proteções contra o Red Skull (Player/Floor/Frag/Skull);
+- Proteções contra o Red Skull *(Player/Floor/Frag/Skull)*;
 - Magias e runas automáticas;
 - Limite de mortes;
 - Após morrer espera no treiner até dar o tempo para caçar de novo;
-- Auto reconectar-se após o SS ou sua internet e/ou ot cair;
+- Auto reconectar-se após o *Server Save* ou sua internet e/ou ot cair;
 - Opço de caçar sem jogadores na tela;
 - Repot 100% automático e preciso para todas as vocações;
 - Venda de loot completa;
 - Regenerar stamina no treiner;
 - Opção de circuitos dentro de apenas um script;
 - Opção de ligar cast automático com ou sem senha;
-- Transformar dinheiro automático (gold em platinum/platinum em crystal);
-- Anti-bug de parcel, caixas, flor, travado no chão e outros.
+- Transformar dinheiro automático *(gold em platinum/platinum em crystal)*;
+- Anti-bug de parcel, chest, box, flower, tiles, travado no sqm e outros.
 
-## Cavebots do pacote
-| Script                                           | Cidade residência      | VIP?          |
-| :-----------------------------------------------: | :--------------------: | :-----------: |
+### Conteúdo do pacote
+| Cavebot                                           | Torne-se morador de      | Necessário ser VIP?          |
+| ----------------------------------------------- | -------------------- | ----------- |
 | Bali Dragon Lord                                 | Bali                   | Sim           |
 | Bhaskar Demon                                    | Bhaskar                | Sim           |
 | Bhaskar Dragon Lord North                        | Bhaskar                | Sim           |
@@ -74,26 +77,24 @@ import styles from './iconesSociais.module.css'; // Reutilizando o mesmo CSS de 
 | Oken Frost                                       | Oken                   | Sim           |
 | Palladium Dragon Lord e Infernalist              | Palladium              | Não           |
 | Snowflake Grim Reaper                            | Snowflake              | Sim           |
-| The Hell                                         | Ice City Vip           | Sim           |
+| The Hell *(Demons)*                                         | Ice City Vip           | Sim           |
 | Utopia Hydra Serpent Medusa                      | Yalahar                | Não           |
 | Wyrm Spawn                                       | Ice City Vip           | Sim           |
 
-## Recomendações e informações adicionais
-- Os scripts já contam com healing, haste, food, ring, utito tempo, todas opções configuráveis no menu dentro de cavebot hotkeys.
-- Na primeira action do script você consegue ver qual a cidade que precisa ser morador.
-- Não ative reconnect, magias de ataque (exori frigo, exori gran, exevo gran mas frigo e etc.), nem nada do tipo;
-- Desmarque a opção "Use old rune aiming" nos extras e clique em save para atualizar;
-- Preste bem atenção nas informações que você altera nas opções customizáveis do menu; 
-- Não modifique nada na parte das hotkeys abaixo do customizável;
-- Para que tudo ocorra perfeitamente, mantenha o seu mapa aberto em 100% e use cliente com imagens originais;
-- Colabore conosco, caso encontre algum bug ou tenha qualquer problema, entre em contato.
+:::info
+- Os cavebots já contam com **healing**, **haste**, **food**, **energy ring**, **utito tempo**, todas opções configuráveis no menu dentro de cavebot hotkeys.
+- Para que tudo ocorra perfeitamente, [**baixe o mapa full do kaldrox**](https://www.kaldrox.com/downloads/Kaldrox%20AutoMAP.exe) e use [**cliente com imagens originais**](https://www.kaldrox.com/downloads/Kaldrox%20Client%20Old.exe);
+- Colabore conosco, caso encontre algum bug ou tenha qualquer problema, entre em [contato](/contatos).
+:::
+
+:::danger Atenção
+- Não ative hotkeys de reconnect, magias em área, nada que interfira no script, esse tipo de hotkey pode causar problemas no seu uso.
+- Desmarque a opção Use old rune aiming nos extras do ElfBot.
+:::
 
 ## Baixar pacote
-import Link from '@docusaurus/Link'; // Se o botão for um link interno
-
-
-<Link className="button button--primary button--lg" to="/pagina-grande">
-  Clique aqui para baixar
-</Link>
+<a href="/downloads/jobscripts-kaldrox-cavebot-free.zip" download="jobscripts-kaldrox-cavebot-free.zip" className="button button--primary button--lg">
+  Link direto
+</a>
 
 Ao baixar qualquer arquivo disponibilizado no site, você concorda com a [política de privacidade](/legal/privacidade), bem como com os [termos de uso](/legal/termos).
