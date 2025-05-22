@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://jobervalmagalhaes.github.io/blog</id>
+    <id>https://jobscripts.com.br/blog</id>
     <title>JOB Scripts Blog</title>
     <updated>2025-05-15T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://jobervalmagalhaes.github.io/blog"/>
+    <link rel="alternate" href="https://jobscripts.com.br/blog"/>
     <subtitle>JOB Scripts Blog</subtitle>
-    <icon>https://jobervalmagalhaes.github.io/img/favicon.ico</icon>
+    <icon>https://jobscripts.com.br/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Primeira Postagem do Blog]]></title>
-        <id>https://jobervalmagalhaes.github.io/blog/primeira-postagem-do-blog</id>
-        <link href="https://jobervalmagalhaes.github.io/blog/primeira-postagem-do-blog"/>
+        <id>https://jobscripts.com.br/blog/primeira-postagem-do-blog</id>
+        <link href="https://jobscripts.com.br/blog/primeira-postagem-do-blog"/>
         <updated>2025-05-15T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Este é o primeiro post oficial do blog! 🎉]]></summary>
         <content type="html"><![CDATA[<p>Este é o primeiro post oficial do blog! 🎉</p>
@@ -21,7 +21,7 @@
 <li>Dicas de uso para melhorar sua experiência;</li>
 <li>Tutoriais e exemplos práticos.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="o-que-esperar-do-nosso-conteúdo">O que esperar do nosso conteúdo?<a href="https://jobervalmagalhaes.github.io/blog/primeira-postagem-do-blog#o-que-esperar-do-nosso-conte%C3%BAdo" class="hash-link" aria-label="Link direto para O que esperar do nosso conteúdo?" title="Link direto para O que esperar do nosso conteúdo?">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="o-que-esperar-do-nosso-conteúdo">O que esperar do nosso conteúdo?<a href="https://jobscripts.com.br/blog/primeira-postagem-do-blog#o-que-esperar-do-nosso-conte%C3%BAdo" class="hash-link" aria-label="Link direto para O que esperar do nosso conteúdo?" title="Link direto para O que esperar do nosso conteúdo?">​</a></h2>
 <p>Nosso objetivo é manter você sempre informado com conteúdos úteis, diretos e voltados para o que realmente importa: facilitar sua vida dentro do jogo com ferramentas automatizadas de qualidade.</p>
 <hr>
 <p>Nos acompanhe também nas redes sociais:</p>
