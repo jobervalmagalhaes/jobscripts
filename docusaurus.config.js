@@ -8,7 +8,7 @@ const config = {
   url: 'https://jobscripts.com.br',
   baseUrl: '/',
   organizationName: 'jobervalmagalhaes',
-  projectName: 'jobervalmagalhaes.github.io',
+  projectName: 'jobscripts',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   i18n: {
@@ -24,7 +24,7 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           //editUrl:
-            //'https://github.com/jobervalmagalhaes/jobervalmagalhaes.github.io/tree/main/packages/create-docusaurus/templates/shared/',
+            //'https://github.com/jobervalmagalhaes/jobscripts/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -33,7 +33,7 @@ const config = {
             xslt: true,
           },
           //editUrl:
-            //'https://github.com/jobervalmagalhaes/jobervalmagalhaes.github.io/tree/main/packages/create-docusaurus/templates/shared/',
+            //'https://github.com/jobervalmagalhaes/jobscripts/tree/main/packages/create-docusaurus/templates/shared/',
           // Opções úteis para reforçar boas práticas de blog
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
