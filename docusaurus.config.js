@@ -160,7 +160,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Todos os direitos reservados. © 2020 - ${new Date().getFullYear()} <strong>JOB Scripts</strong>.`,
+        copyright: `Todos os direitos reservados. © 2020 - ${new Date().getFullYear()} <strong>JOB Scripts</strong>.<br> Feito com Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
