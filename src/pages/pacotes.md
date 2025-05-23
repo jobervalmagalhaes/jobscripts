@@ -3,9 +3,13 @@ title: Pacotes
 description: Adquira os melhores pacotes de cavebots com valores promocionais para os servidores parceiros do JOB Scripts.
 ---
 # Pacotes
-## Valar Pack
-**Servidor:** Kaldrox Global
+## Servidor: Kaldrox Global
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="valar" label="Valar Pack" default>
 <details>
 <summary><strong>Cavebots do pacote</strong></summary>
 1. Valar Afflicted Strider, Blemished Spawn & Eyeless Devourer
@@ -40,10 +44,8 @@ description: Adquira os melhores pacotes de cavebots com valores promocionais pa
 <p style={{ fontSize: '2.5rem', fontWeight: 'bold', color: 'var(--ifm-color-primary)', fontFamily: 'var(--ifm-font-family-base)' }}>
 R$220,00
 </p>
----
-## Bhaskar Pack
-**Servidor:** Kaldrox Global
-
+  </TabItem>
+  <TabItem value="bhaskar" label="Bhaskar Pack">
 <details>
 <summary><strong>Cavebots do pacote</strong></summary>
 1. Bhaskar Asura
@@ -73,10 +75,8 @@ R$220,00
 <p style={{ fontSize: '2.5rem', fontWeight: 'bold', color: 'var(--ifm-color-primary)', fontFamily: 'var(--ifm-font-family-base)' }}>
 R$200,00
 </p>
----
-## Bali Pack
-**Servidor:** Kaldrox Global
-
+  </TabItem>
+  <TabItem value="bali" label="Bali Pack">
 <details>
 <summary><strong>Cavebots do pacote</strong></summary>
 1. Bali Cyclops Wooly Zahrain
@@ -114,6 +114,9 @@ R$200,00
 <p style={{ fontSize: '2.5rem', fontWeight: 'bold', color: 'var(--ifm-color-primary)', fontFamily: 'var(--ifm-font-family-base)' }}>
 R$250,00
 </p>
+  </TabItem>
+</Tabs>
+
 ---
 
 ## Quer comprar algum pacote? Entre em contato:
