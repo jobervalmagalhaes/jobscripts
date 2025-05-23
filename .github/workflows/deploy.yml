@@ -18,6 +18,8 @@ jobs:
       - run: npm install -g yarn
       - run: yarn install
       - run: yarn build
+      - name: Verificar se CNAME foi gerado
+        run: cat ./build/CNAME
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
