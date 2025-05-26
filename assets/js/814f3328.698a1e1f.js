@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkjobscripts_site=self.webpackChunkjobscripts_site||[]).push([[7472],{5513:s=>{s.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Novo site do JOB Scripts","permalink":"/blog/novo-site","unlisted":false,"date":"2025-05-26T00:00:00.000Z"}]}')}}]);

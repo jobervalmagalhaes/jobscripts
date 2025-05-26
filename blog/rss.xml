@@ -4,32 +4,32 @@
         <title>JOB Scripts Blog</title>
         <link>https://jobscripts.com.br/blog</link>
         <description>JOB Scripts Blog</description>
-        <lastBuildDate>Thu, 15 May 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 26 May 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>pt-BR</language>
         <item>
-            <title><![CDATA[Primeira Postagem do Blog]]></title>
-            <link>https://jobscripts.com.br/blog/primeira-postagem-do-blog</link>
-            <guid>https://jobscripts.com.br/blog/primeira-postagem-do-blog</guid>
-            <pubDate>Thu, 15 May 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Este é o primeiro post oficial do blog! 🎉]]></description>
-            <content:encoded><![CDATA[<p>Este é o primeiro post oficial do blog! 🎉</p>
-<p>Neste espaço, vamos compartilhar:</p>
+            <title><![CDATA[Novo site do JOB Scripts]]></title>
+            <link>https://jobscripts.com.br/blog/novo-site</link>
+            <guid>https://jobscripts.com.br/blog/novo-site</guid>
+            <pubDate>Mon, 26 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Bem-vindo ao novo site do JOB Scripts]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bem-vindo-ao-novo-site-do-job-scripts">Bem-vindo ao novo site do JOB Scripts<a href="https://jobscripts.com.br/blog/novo-site#bem-vindo-ao-novo-site-do-job-scripts" class="hash-link" aria-label="Link direto para Bem-vindo ao novo site do JOB Scripts" title="Link direto para Bem-vindo ao novo site do JOB Scripts">​</a></h2>
+<p>Fala pessoal, esse é o novo site do JOB Scripts. Por aqui espero trazer muito mais conteúdo, tendo mais liberdade.</p>
 <ul>
-<li>Atualizações de scripts e hotkeys;</li>
-<li>Novidades sobre o ElfBot NG;</li>
-<li>Dicas de uso para melhorar sua experiência;</li>
-<li>Tutoriais e exemplos práticos.</li>
+<li>O site conta com estrutura simples, o que fará com que seja carregado rapidamente;</li>
+<li>Conta também com tema noturno/diurno, para não agredir sua visão;</li>
+<li>Claro, todo conteúdo será melhorado e tudo que existia continua.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="o-que-esperar-do-nosso-conteúdo">O que esperar do nosso conteúdo?<a href="https://jobscripts.com.br/blog/primeira-postagem-do-blog#o-que-esperar-do-nosso-conte%C3%BAdo" class="hash-link" aria-label="Link direto para O que esperar do nosso conteúdo?" title="Link direto para O que esperar do nosso conteúdo?">​</a></h2>
-<p>Nosso objetivo é manter você sempre informado com conteúdos úteis, diretos e voltados para o que realmente importa: facilitar sua vida dentro do jogo com ferramentas automatizadas de qualidade.</p>
-<hr>
-<p>Nos acompanhe também nas redes sociais:</p>
-<p>📱 <a href="https://instagram.com/jobscripts" target="_blank" rel="noopener noreferrer">Instagram</a><br>
-<!-- -->💬 <a href="https://wa.me/5582999464655" target="_blank" rel="noopener noreferrer">WhatsApp</a><br>
-<!-- -->📺 <a href="https://youtube.com/@jobscripts" target="_blank" rel="noopener noreferrer">YouTube</a></p>
-<p>Até o próximo post! 🚀</p>]]></content:encoded>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="sobre-este-blog">Sobre este Blog<a href="https://jobscripts.com.br/blog/novo-site#sobre-este-blog" class="hash-link" aria-label="Link direto para Sobre este Blog" title="Link direto para Sobre este Blog">​</a></h2>
+<p>O Blog será usado para postar algumas questões que surgirem sobre o Tibia, ElfBot.</p>
+<p>Algo como <em>OFF Topic</em>, como pedidos de vocês que acho interessante, etc.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="acompanhe-me-nas-redes">Acompanhe-me nas redes:<a href="https://jobscripts.com.br/blog/novo-site#acompanhe-me-nas-redes" class="hash-link" aria-label="Link direto para Acompanhe-me nas redes:" title="Link direto para Acompanhe-me nas redes:">​</a></h2>
+<ul>
+<li>📸<a href="https://instagram.com/jobscripts" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+<li>📖<a href="https://facebook.com/jobscripts" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+<li>📲Fale comigo no <a href="https://wa.me/5582999464655" target="_blank" rel="noopener noreferrer">WhatsApp</a> ou no <a href="https://t.me/jobscripts" target="_blank" rel="noopener noreferrer">Telegram</a>.</li>
+</ul>]]></content:encoded>
             <category>jobscripts</category>
         </item>
     </channel>
