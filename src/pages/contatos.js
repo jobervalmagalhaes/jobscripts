@@ -34,6 +34,17 @@ export default function Contatos() {
               <img src="img/telegram.png" alt="Telegram" />
               <p><strong><u>+55 82 9 9946-4655</u></strong></p>
             </a>
+
+            {/* Gmail */}
+            <a
+              href="mailto:suporte@jobscripts.com.br"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.card}
+            >
+              <img src="img/gmail.png" alt="Gmail" />
+              <p><strong><u>suporte@jobscripts.com.br</u></strong></p>
+            </a>
           </div>
         </div>
       </main>
