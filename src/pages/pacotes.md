@@ -42,7 +42,7 @@ import TabItem from '@theme/TabItem';
 
 *por apenas*
 <p style={{ fontSize: '2.5rem', fontWeight: 'bold', color: 'var(--ifm-color-primary)', fontFamily: 'var(--ifm-font-family-base)' }}>
-R$220,00
+R$200,00
 </p>
   </TabItem>
   <TabItem value="bhaskar" label="Bhaskar Pack">
@@ -50,25 +50,29 @@ R$220,00
 <summary><strong>Cavebots do pacote</strong></summary>
 1. Bhaskar Asura
 2. Bhaskar Black Warlock
-3. Bhaskar Dark Torturer Lost Soul Destroyer S
-4. Bhaskar Defiler Western Wyrm S
-5. Bhaskar Dragon Lord NW
-6. Bhaskar Draken North
-7. Bhaskar Frost Dragon Terrorsleep
-8. Bhaskar Fury Defiler Infernalist e Outros
-9. Bhaskar Fury Dragon Lord Princess
-10. Bhaskar Fury of Venom Medusa Sub W
-11. Bhaskar Fury Of Venom W
-12. Bhaskar Fury Sub-Solo SE
-13. Bhaskar Grim Reaper Dark Torturer S
-14. Bhaskar Grim Reaper Lost Soul Choking Fear
-15. Bhaskar Medusa Hydra Serpent W
-16. Bhaskar Nefilim Cyclops Princess Behemoth
-17. Bhaskar Phantasm North
-18. Bhaskar Roshamuul Monsters
-19. Bhaskar Western Behemoth S
-20. Bhaskar Western Princess Village
-21. Bhaskar Western Undead Princess S
+3. Bhaskar Castle
+4. Bhaskar Dark Torturer Lost Soul Destroyer S
+5. Bhaskar Defiler Western Wyrm S
+6. Bhaskar Demon, Dragon Lord, Fury & Infernalist
+7. Bhaskar Dragon Lord NW
+8. Bhaskar Draken North
+9. Bhaskar Frost Dragon Terrorsleep
+10. Bhaskar Fury Defiler Infernalist e Outros
+11. Bhaskar Fury Dragon Lord Princess
+12. Bhaskar Fury of Venom Medusa Sub W
+13. Bhaskar Fury Of Venom W
+14. Bhaskar Fury Sub-Solo SE
+15. Bhaskar Grim Reaper Dark Torturer S
+16. Bhaskar Grim Reaper Lost Soul Choking Fear
+17. Bhaskar Lizard & Nefilim
+18. Bhaskar Medusa Hydra Serpent W
+19. Bhaskar Nefilim Cyclops Princess Behemoth
+20. Bhaskar Phantasm North
+21. Bhaskar Roshamuul Monsters
+22. Bhaskar Western Behemoth S
+23. Bhaskar Western Princess & Western Undead Village
+24. Bhaskar Western Princess Village
+25. Bhaskar Western Undead Princess S
 </details>
 
 *por apenas*
