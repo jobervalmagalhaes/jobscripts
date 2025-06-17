@@ -24,7 +24,6 @@ Você poderá chegar mais rápido usando a canoa de Lorek, para isso basta pedir
   ![Localização do NPC Lorek](/img/asuramirror/lorek.png)
   </details>
 :::
-![Caminho Port Hope](/img/asuramirror/porthope.png)
 <details>
   <summary>
     <p>Localização do NPC Tarun</p>
@@ -40,6 +39,7 @@ Você poderá chegar mais rápido usando a canoa de Lorek, para isso basta pedir
 - JobScripts: yes
 - Tarun: I thank you! This is more than I could hope!
 ```
+![Caminho Port Hope](/img/asuramirror/porthope.png)
 
 ## Os Calabouços Secretos
 
