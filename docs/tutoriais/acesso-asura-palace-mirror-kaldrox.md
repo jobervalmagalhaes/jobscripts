@@ -10,6 +10,12 @@ description: Aprenda como obter o acesso ao Asura Valts (espelho) do Asura Palac
 
 ## Iniciando a missão
 Para iniciar a quest, você precisará viajar a **Port Hope**. Siga a direção nordeste, como aponta a imagem, e você chegará em Kha'zeel Mountains, onde encontrará o **NPC Tarun**.
+<details>
+  <summary>
+    <p>Localização do NPC Tarun</p>
+  </summary>
+  ![Localização do NPC Tarun](/img/asuramirror/tarun.png)
+  </details>
 :::tip
 Você poderá chegar mais rápido usando a canoa de Lorek, para isso basta pedir uma passagem para *mountain pass*.
 
@@ -27,12 +33,6 @@ Você poderá chegar mais rápido usando a canoa de Lorek, para isso basta pedir
   ![Localização do NPC Lorek](/img/asuramirror/lorek.png)
   </details>
 :::
-<details>
-  <summary>
-    <p>Localização do NPC Tarun</p>
-  </summary>
-  ![Localização do NPC Tarun](/img/asuramirror/tarun.png)
-  </details>
   **Diálogo**:
 ```
 - JOB Scripts: hi
