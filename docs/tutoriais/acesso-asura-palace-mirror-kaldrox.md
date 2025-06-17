@@ -1,21 +1,24 @@
 ---
 id: acesso-asura-palace-mirror-kaldrox
-title: Acesso Asura Valts (Espelho) Kaldrox
-sidebar_label: Acesso Asura Valts (Espelho) Kaldrox
-description: Aprenda como obter o cesso ao (Asura Valts) espelho do Asura Palace no Kaldrox
+title: Acesso Asura Valts
+sidebar_label: Acesso Asura Valts
+description: Aprenda como obter o acesso ao Asura Valts (espelho) do Asura Palace no Kaldrox Global.
 ---
 
-Esse tutorial segue um [artigo do TibiaWiki](https://www.tibiawiki.com.br/index.php?title=The_Lost_Brother_Quest&oldid=303318#32926,32680,7:4), para adquirir acesso ao [Asura Valts](https://www.tibiawiki.com.br/wiki/Asura_Vaults) (Espelho) do Asura Palace.
+- Esse tutorial segue um [artigo do TibiaWiki](https://www.tibiawiki.com.br/index.php?title=The_Lost_Brother_Quest&oldid=303318#32926,32680,7:4), para adquirir acesso ao [Asura Valts](https://www.tibiawiki.com.br/wiki/Asura_Vaults) (Espelho) do Asura Palace.
+- Essa missão irá funcionar no [Kaldrox Global](https://www.kaldrox.com/?subtopic=Quests).
 
 ## Iniciando a missão
-Para iniciar a quest, você precisará viajar a Port Hope. Siga a direção nordeste, como aponta a imagem, e você chegará em Kha'zeel Mountains, onde encontrará o NPC Tarun.
+Para iniciar a quest, você precisará viajar a **Port Hope**. Siga a direção nordeste, como aponta a imagem, e você chegará em Kha'zeel Mountains, onde encontrará o **NPC Tarun**.
 :::tip
 Você poderá chegar mais rápido usando a canoa de Lorek, para isso basta pedir uma passagem para *mountain pass*.
+
+**Diálogo**:
 ```
 - Lorek: Welcome, JobScripts! I have been expecting you.
-- JobScripts: mountain pass
+- JOB Scripts: mountain pass
 - Lorek: Do you want to sail to Mountain of Port Hope ?
-- JobScripts: yes
+- JOB Scripts: yes
 ```
 <details>
   <summary>
@@ -30,13 +33,14 @@ Você poderá chegar mais rápido usando a canoa de Lorek, para isso basta pedir
   </summary>
   ![Localização do NPC Tarun](/img/asuramirror/tarun.png)
   </details>
+  **Diálogo**:
 ```
-- JobScripts: hi
+- JOB Scripts: hi
 - Tarun: Greetings!
 - Tarun: Here's my offer, JobScripts. Don't you like it?
-- JobScripts: mission
+- JOB Scripts: mission
 - Tarun: My brother is missing. I fear, he went to this evil palace north of here. A place of great beauty, certainly filled with riches and luxury. But in truth it is a threshold to hell and demonesses are after his blood. He is my brother, and I am deeply ashamed to admit but I don't dare to go there. Perhaps your heart is more courageous than mine. Would you go to see this place and search for my brother?
-- JobScripts: yes
+- JOB Scripts: yes
 - Tarun: I thank you! This is more than I could hope!
 ```
 ![Caminho Port Hope](/img/asuramirror/porthope.png)
@@ -44,7 +48,8 @@ Você poderá chegar mais rápido usando a canoa de Lorek, para isso basta pedir
 ## Os Calabouços Secretos
 
 Caminhe para o noroeste do NPC e você logo encontrará o Asura Palace.
-Sua missão deverá ser enfrentar a boss **The Flaming Orchid**, mas para isso você deverá enfrentar algumas criaturas como *Destroyers*, *Hydras* e *Liches* que estão localizadas em calabouços secretos dentro do palácio.
+Sua missão deverá ser enfrentar a boss *The Flaming Orchid*, mas para isso você deverá enfrentar algumas criaturas como *Destroyers*, *Hydras* e *Liches* que estão localizadas em calabouços secretos dentro do palácio, basta matar todas dentro dos calabouços. Caso Alguém já tenha as derrotado, você pode esperar que elas nasçam novamente.
+
 A medida que você for explorando o palácio encontrará rachaduras em alguns SQMs, ao andar sobre essas rachaduras você cairá dentro dos calabouços secretos e para sair deles bastar usar uma rope ou a exani tera.
 
 ### Sala dos Liches
@@ -52,8 +57,8 @@ A medida que você for explorando o palácio encontrará rachaduras em alguns SQ
   <summary>
     <p>Localização do calabouço dos liches</p>
   </summary>
-  ![Localização do NPC Tarun](/img/asuramirror/lich.png)
-  ![Localização do NPC Tarun](/img/asuramirror/lich1.png)
+  ![Localização do calabouço dos liches (Minimap)](/img/asuramirror/lich.png)
+  ![Localização do calabouço dos liches](/img/asuramirror/lich1.png)
   </details>
 
 ### Sala das Hydras
@@ -61,8 +66,8 @@ A medida que você for explorando o palácio encontrará rachaduras em alguns SQ
   <summary>
     <p>Localização do calabouço das hydras</p>
   </summary>
-  ![Localização do NPC Tarun](/img/asuramirror/hydra.png)
-  ![Localização do NPC Tarun](/img/asuramirror/hydra1.png)
+  ![Localização do calabouço das hydras (Minimap)](/img/asuramirror/hydra.png)
+  ![Localização do calabouço das hydras](/img/asuramirror/hydra1.png)
   </details>
 
 ### Sala dos Destroyers
@@ -70,8 +75,8 @@ A medida que você for explorando o palácio encontrará rachaduras em alguns SQ
   <summary>
     <p>Localização do calabouço dos destroyers</p>
   </summary>
-  ![Localização do NPC Tarun](/img/asuramirror/destroyer.png)
-  ![Localização do NPC Tarun](/img/asuramirror/destroyer1.png)
+  ![Localização do calabouço dos destroyers (Minimap)](/img/asuramirror/destroyer.png)
+  ![Localização do calabouço dos destroyers](/img/asuramirror/destroyer1.png)
   </details>
 
 ### Sala dos Massive Fire Elementals
@@ -79,8 +84,8 @@ A medida que você for explorando o palácio encontrará rachaduras em alguns SQ
   <summary>
     <p>Localização do calabouço dos fire elementals</p>
   </summary>
-  ![Localização do NPC Tarun](/img/asuramirror/fireelemental.png)
-  ![Localização do NPC Tarun](/img/asuramirror/fireelemental1.png)
+  ![Localização do calabouço dos fire elementals (Minimap)](/img/asuramirror/fireelemental.png)
+  ![Localização do calabouço dos fire elementals](/img/asuramirror/fireelemental1.png)
   </details>
 
 ### Sala dos Massive Energy Elementals
@@ -88,26 +93,29 @@ A medida que você for explorando o palácio encontrará rachaduras em alguns SQ
   <summary>
     <p>Localização do calabouço energy elementals</p>
   </summary>
-  ![Localização do NPC Tarun](/img/asuramirror/energyelemental.png)
-  ![Localização do NPC Tarun](/img/asuramirror/energyelemental1.png)
+  ![Localização do calabouço energy elementals (Minimap)](/img/asuramirror/energyelemental.png)
+  ![Localização do calabouço energy elementals](/img/asuramirror/energyelemental1.png)
   </details>
 
-### The Flaming Orchid (Boss)
+### The Flaming Orchid
 <details>
   <summary>
-    <p>Localização da Flaming Orchid (Boss)</p>
+    <p>Localização da Flaming Orchid</p>
   </summary>
-  ![Localização do NPC Tarun](/img/asuramirror/asura.png)
-  ![Localização do NPC Tarun](/img/asuramirror/asura1.png)
+  ![Localização da Flaming Orchid (Minimap)](/img/asuramirror/asura.png)
+  ![Localização da Flaming Orchid](/img/asuramirror/asura1.png)
   </details>
 
 ## Finalizando a missão
-Volte ao NPC Tarun e reporte a missão:
+Volte ao NPC Tarun e reporte a missão.
+
+**Diálogo**:
 ```
-- JobScripts: hi
+- JOB Scripts: hi
 - Tarun: Greetings!
-- JobScripts: mission
+- JOB Scripts: mission
 - Tarun: So, he is dead as I feared. I warned him to go with this woman, but he gave in to temptation. My heart darkens and moans. But you have my sincere thanks. Without your help I would have stayed in the dark about his fate. Please, take this as a little recompense. 
 ```
-Ao finalizara missão você ganhará acesso ao [Asura Valts](https://www.tibiawiki.com.br/wiki/Asura_Vaults) por trás do espelho localizado no andar térreo do palácio.
-  ![Localização do Asura Vaults](/img/asuramirror/mirror.png)
+Ao finalizar a missão você ganhará acesso ao [Asura Valts](https://www.tibiawiki.com.br/wiki/Asura_Vaults) por trás do espelho localizado no andar térreo do palácio.
+
+![Localização do Asura Vaults](/img/asuramirror/mirror.png)
