@@ -119,7 +119,62 @@ R$200,00
 R$250,00
 </p>
   </TabItem>
+  <TabItem value="loot" label="Loot Pack">
+<details>
+<summary><strong>Cavebots do pacote</strong></summary>
+1. Ab'Dendriel Westerns Hellgate
+2. Arcana Westerns North
+3. Bali Cyclops Wooly Zahrain
+4. Bhaskar Behemoth S
+5. Edron Western Nightstalker Corrupter Terramite W
+6. Gengia Golden Warrior, Dragon Lord & Western Nightstalker
+7. Gundabad Western Nightstalker S
+
+:::info
+Todos contam com opção de transferência de dinheiro para outro personagem ou mantê-lo no banco.
+:::
+
+</details>
+
+*por apenas*
+<p style={{ fontSize: '2.5rem', fontWeight: 'bold', color: 'var(--ifm-color-primary)', fontFamily: 'var(--ifm-font-family-base)' }}>
+R$100,00
+</p>
+  </TabItem>  
+  <TabItem value="task" label="Task Pack">
+<details>
+<summary><strong>Cavebots do pacote</strong></summary>
+1. Arcana Nightmare N
+2. Bali Cyclops Wooly Zahrain
+3. Bali Elf Black Gaard S
+4. Bali Fury
+5. Bali Nefilim Gaard W
+6. Bali Western Princess Zahrain Sub
+7. Bali Western Undead Zahrain Sub
+8. Bhaskar Fury Of Venom W
+9. Darmax Hydra NE
+10. Dungeon Grim Reaper
+11. Ethno Demon
+12. Gundabad Infernalist W
+13. Gundabad Medusa NE
+14. Gundabad Western Nightstalker S
+15. Ice Island Fury Of Ice
+16. Kampala Serpent Spawn
+17. Kazordoon Golden Warrior Isle of Devil
+18. Palladium Juggernaut
+19. Pyre Warlock
+20. Roshamuul
+21. Zao Draken Lizard E
+</details>
+
+*por apenas*
+<p style={{ fontSize: '2.5rem', fontWeight: 'bold', color: 'var(--ifm-color-primary)', fontFamily: 'var(--ifm-font-family-base)' }}>
+R$180,00
+</p>
+  </TabItem>
+  
 </Tabs>
+
 
 ---
 

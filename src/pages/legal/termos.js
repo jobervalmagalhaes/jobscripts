@@ -15,7 +15,7 @@ export default function TermosDeUso() {
             </p>
 
             <h2>2. Uso de Licença</h2>
-            <p>É concedida permissão para baixar temporariamente uma cópia dos materiais no site JOB Scripts, apenas para visualização pessoal e não comercial. Esta é uma licença, não uma transferência de propriedade. Sob esta licença, você não pode:</p>
+            <p>É concedida permissão para baixar temporariamente uma cópia dos materiais no site <strong>JOB Scripts</strong>, apenas para visualização pessoal e não comercial. Esta é uma licença, não uma transferência de propriedade. Sob esta licença, você não pode:</p>
             <ul>
               <li>Modificar ou copiar os materiais;</li>
               <li>Usar os materiais para qualquer finalidade comercial ou exibição pública;</li>
@@ -24,27 +24,27 @@ export default function TermosDeUso() {
               <li>Transferir os materiais para outra pessoa ou espelhar em outro servidor.</li>
             </ul>
             <p>
-              Esta licença será automaticamente revogada se você violar qualquer uma dessas restrições e poderá ser encerrada pelo JOB Scripts a qualquer momento. Ao encerrar a visualização, você deve apagar todos os materiais baixados.
+              Esta licença será automaticamente revogada se você violar qualquer uma dessas restrições e poderá ser encerrada pelo <strong>JOB Scripts</strong> a qualquer momento. Ao encerrar a visualização, você deve apagar todos os materiais baixados.
             </p>
 
             <h2>3. Isenção de Responsabilidade</h2>
             <p>
-              Os materiais são fornecidos "como estão". O JOB Scripts não oferece garantias expressas ou implícitas, incluindo, mas não se limitando a, garantias de comercialização ou adequação a um propósito específico. Não garantimos a precisão ou confiabilidade do uso dos materiais.
+              Os materiais são fornecidos "como estão". O <strong>JOB Scripts</strong> não oferece garantias expressas ou implícitas, incluindo, mas não se limitando a, garantias de comercialização ou adequação a um propósito específico. Não garantimos a precisão ou confiabilidade do uso dos materiais.
             </p>
 
             <h2>4. Limitações</h2>
             <p>
-              Em nenhum caso o JOB Scripts ou seus fornecedores serão responsáveis por quaisquer danos decorrentes do uso ou da incapacidade de usar os materiais, mesmo que notificados da possibilidade desses danos. Essas limitações podem não se aplicar em certas jurisdições.
+              Em nenhum caso o <strong>JOB Scripts</strong> ou seus fornecedores serão responsáveis por quaisquer danos decorrentes do uso ou da incapacidade de usar os materiais, mesmo que notificados da possibilidade desses danos. Essas limitações podem não se aplicar em certas jurisdições.
             </p>
 
             <h2>5. Precisão dos Materiais</h2>
             <p>
-              Os materiais podem conter erros técnicos ou tipográficos. O JOB Scripts não garante que o conteúdo seja preciso, completo ou atualizado. Alterações podem ser feitas a qualquer momento sem aviso prévio.
+              Os materiais podem conter erros técnicos ou tipográficos. O <strong>JOB Scripts</strong> não garante que o conteúdo seja preciso, completo ou atualizado. Alterações podem ser feitas a qualquer momento sem aviso prévio.
             </p>
 
             <h2>6. Links</h2>
             <p>
-              O JOB Scripts não revisa todos os sites vinculados e não se responsabiliza por seu conteúdo. A inclusão de links não implica endosso. O uso de sites vinculados é por conta e risco do usuário.
+              O <strong>JOB Scripts</strong> não revisa todos os sites vinculados e não se responsabiliza por seu conteúdo. A inclusão de links não implica endosso. O uso de sites vinculados é por conta e risco do usuário.
             </p>
 
             <h2>7. Pagamentos</h2>
@@ -54,12 +54,12 @@ export default function TermosDeUso() {
 
             <h2>Modificações</h2>
             <p>
-              O JOB Scripts pode revisar estes termos de serviço a qualquer momento sem aviso prévio. Ao continuar usando o site, você concorda com a versão atual dos termos.
+              O <strong>JOB Scripts</strong> pode revisar estes termos de serviço a qualquer momento sem aviso prévio. Ao continuar usando o site, você concorda com a versão atual dos termos.
             </p>
 
             <h2>Lei Aplicável</h2>
             <p>
-              Estes termos são regidos pelas leis aplicáveis ao JOB Scripts, e você concorda em se submeter à jurisdição exclusiva dos tribunais da localidade.
+              Estes termos são regidos pelas leis aplicáveis ao <strong>JOB Scripts</strong>, e você concorda em se submeter à jurisdição exclusiva dos tribunais da localidade.
             </p>
           </div>
         </div>

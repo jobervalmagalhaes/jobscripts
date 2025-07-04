@@ -1,0 +1,57 @@
+.calculatorContainer {
+  padding: var(--ifm-card-padding);
+  background-color: var(--ifm-background-surface-color);
+  border-radius: var(--ifm-card-border-radius);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  max-width: 450px;
+  margin: var(--ifm-spacing-vertical) 0;
+}
+
+.title {
+  font-size: 1.5em;
+  margin-bottom: var(--ifm-spacing-vertical);
+  color: var(--ifm-color-primary);
+}
+
+.inputGroup {
+  margin-bottom: var(--ifm-spacing-vertical);
+}
+
+.label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: var(--ifm-spacing-horizontal);
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: var(--ifm-button-padding-vertical) var(--ifm-button-padding-horizontal);
+  border-radius: var(--ifm-global-radius);
+  border: 1px solid var(--ifm-color-emphasis-500);
+  background-color: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  font-size: 1em;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  border-color: var(--ifm-color-primary);
+  outline: none;
+}
+
+.resultContainer {
+  margin-top: var(--ifm-spacing-vertical);
+  padding: var(--ifm-alert-padding-vertical) var(--ifm-alert-padding-horizontal);
+  border-radius: var(--ifm-alert-border-radius);
+  background-color: var(--ifm-color-primary-lightest);
+  border: 1px solid var(--ifm-color-primary-light);
+  text-align: left;
+}
+
+.resultText {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--ifm-color-primary-dark);
+}

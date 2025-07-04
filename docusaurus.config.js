@@ -160,7 +160,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Todos os direitos reservados. © 2020 - ${new Date().getFullYear()} <strong>JOB Scripts</strong>.`,
+        copyright: `© 2020 - ${new Date().getFullYear()} <strong>JOB Scripts</strong>.<br> O jogo Tibia e suas imagens são propriedades de CipSoft GmbH.`,
       },
       prism: {
         theme: prismThemes.github,
