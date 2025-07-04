@@ -54,7 +54,7 @@ const config = {
         title: 'JOB Scripts',
         logo: {
           alt: 'Logo JOB Scripts',
-          src: 'img/logo.svg',
+          src: 'img/jobscripts.png',
         },
         items: [
             {
@@ -119,20 +119,30 @@ const config = {
           {
             title: 'Contatos',
             items: [
-              {
+              /*{
                 label: 'WhatsApp',
                 href: 'https://wa.me/5582999464655',
               },
               {
                 label: 'Telegram',
                 href: 'https://t.me/+5582999464655',
+              },*/
+              {
+                html: `
+                <a href="https://wa.me/5582999464655" target="_blank" rel="noreferrer noopener" aria-label="WhatsApp">
+                  <img src="/img/whatsapp.png" alt="WhatsApp" width="32" height="32"/>
+                </a>
+                <a href="https://t.me/jobscripts" target="_blank" rel="noreferrer noopener" aria-label="Telegram">
+                  <img src="/img/telegram.png" alt="Telegram" width="32" height="32"/>
+                </a>
+              `,
               },
             ],
           },
           {
             title: 'Social',
             items: [
-              {
+              /*{
                 label: 'Instagram',
                 href: 'https://instagram.com/jobscripts',
               },
@@ -143,6 +153,19 @@ const config = {
               {
                 label: 'YouTube',
                 href: 'https://youtube.com/@jobscripts',
+              },*/
+              {
+                html: `
+                <a href="https://instagram.com/jobscripts" target="_blank" rel="noreferrer noopener" aria-label="Instagram">
+                  <img src="/img/instagram.png" alt="Instagram" width="32" height="32"/>
+                </a>
+                <a href="https://facebook.com/jobscripts" target="_blank" rel="noreferrer noopener" aria-label="Facebook">
+                  <img src="/img/facebook.png" alt="Facebook" width="32" height="32"/>
+                </a>
+                <a href="https://youtube.com/jobscripts" target="_blank" rel="noreferrer noopener" aria-label="YouTube">
+                  <img src="/img/youtube.png" alt="YouTube" width="32" height="32"/>
+                </a>
+              `,
               },
             ],
           },

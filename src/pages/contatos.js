@@ -32,7 +32,7 @@ export default function Contatos() {
               className={styles.card}
             >
               <img src="img/telegram.png" alt="Telegram" />
-              <p><strong><u>+55 82 9 9946-4655</u></strong></p>
+              <p><strong><u>@jobscripts</u></strong></p>
             </a>
 
             {/* Gmail */}
