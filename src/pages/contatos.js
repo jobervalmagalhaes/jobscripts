@@ -20,7 +20,7 @@ export default function Contatos() {
               rel="noopener noreferrer"
               className={styles.card}
             >
-              <img src="img/whatsapp.png" alt="WhatsApp" />
+              <img src="img/social/whatsapp.png" alt="WhatsApp" />
               <p><strong><u>+55 82 9 9946-4655</u></strong></p>
             </a>
 
@@ -31,7 +31,7 @@ export default function Contatos() {
               rel="noopener noreferrer"
               className={styles.card}
             >
-              <img src="img/telegram.png" alt="Telegram" />
+              <img src="img/social/telegram.png" alt="Telegram" />
               <p><strong><u>@jobscripts</u></strong></p>
             </a>
 
@@ -42,7 +42,7 @@ export default function Contatos() {
               rel="noopener noreferrer"
               className={styles.card}
             >
-              <img src="img/gmail.png" alt="Gmail" />
+              <img src="img/social/gmail.png" alt="Gmail" />
               <p><strong><u>suporte@jobscripts.com.br</u></strong></p>
             </a>
           </div>

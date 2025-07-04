@@ -74,23 +74,23 @@ const config = {
             items: [
               {
                 label: 'Cavebots Gratuitos',
-                to: '/cavebots-gratuitos',
+                to: 'scripts/cavebots-gratuitos',
               },
               {
                 label: 'Cavebots Privados',
-                to: '/cavebots-privados',
+                to: 'scripts/cavebots-privados',
               },
               {
                 label: 'Cavebots Pronta-Entrega',
-                to: '/cavebots-pronta-entrega',
+                to: 'scripts/cavebots-pronta-entrega',
               },
               {
                 label: 'Pacotes',
-                to: '/pacotes',
+                to: 'scripts/pacotes',
               },
               {
                 label: 'Custom Icon',
-                to: '/custom-icon',
+                to: 'scripts/custom-icon',
               },
             ],
           },
@@ -130,10 +130,10 @@ const config = {
               {
                 html: `
                 <a href="https://wa.me/5582999464655" target="_blank" rel="noreferrer noopener" aria-label="WhatsApp">
-                  <img src="/img/whatsapp.png" alt="WhatsApp" width="32" height="32"/>
+                  <img src="/img/social/whatsapp.png" alt="WhatsApp" width="32" height="32"/>
                 </a>
                 <a href="https://t.me/jobscripts" target="_blank" rel="noreferrer noopener" aria-label="Telegram">
-                  <img src="/img/telegram.png" alt="Telegram" width="32" height="32"/>
+                  <img src="/img/social/telegram.png" alt="Telegram" width="32" height="32"/>
                 </a>
               `,
               },
@@ -157,13 +157,13 @@ const config = {
               {
                 html: `
                 <a href="https://instagram.com/jobscripts" target="_blank" rel="noreferrer noopener" aria-label="Instagram">
-                  <img src="/img/instagram.png" alt="Instagram" width="32" height="32"/>
+                  <img src="/img/social/instagram.png" alt="Instagram" width="32" height="32"/>
                 </a>
                 <a href="https://facebook.com/jobscripts" target="_blank" rel="noreferrer noopener" aria-label="Facebook">
-                  <img src="/img/facebook.png" alt="Facebook" width="32" height="32"/>
+                  <img src="/img/social/facebook.png" alt="Facebook" width="32" height="32"/>
                 </a>
                 <a href="https://youtube.com/jobscripts" target="_blank" rel="noreferrer noopener" aria-label="YouTube">
-                  <img src="/img/youtube.png" alt="YouTube" width="32" height="32"/>
+                  <img src="/img/social/youtube.png" alt="YouTube" width="32" height="32"/>
                 </a>
               `,
               },

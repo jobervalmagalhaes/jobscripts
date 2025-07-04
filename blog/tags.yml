@@ -1,4 +1,14 @@
 jobscripts:
-  label: jobscripts
+  label: JOB Scripts
   permalink: /jobscripts
-  description: JOB Scripts tag description
+  description: Posts relacionados ao JOB Scripts.
+
+kaldrox:
+  label: Kaldrox
+  permalink: /kaldrox
+  description: Posts do Kaldrox Global.
+
+tibia:
+  label: Tibia
+  permalink: /tibia
+  description: Posts relacionados ao Tibia.

@@ -9,14 +9,14 @@ const bots = [
     image: '/img/kaldrox.png',
     description:
       'Scripts gratuitos de cavebot otimizados para o servidor Kaldrox Global. Inclui suporte para cavebot, targeting, healing e anti-idle.',
-    downloadLink: '/kaldrox'
+    downloadLink: 'cavebots-gratuitos/kaldrox'
   },
   /*{
     server: 'Ilusion Baiak',
     image: '/img/ilusion.png',
     description:
       'Scripts gratuitos de cavebot otimizados para o servidor Ilusion Baiak. Inclui suporte para cavebot, targeting, healing e anti-idle.',
-    downloadLink: '#'
+    downloadLink: 'cavebots-gratuitos/ilusion'
   },*/
 ];
 
