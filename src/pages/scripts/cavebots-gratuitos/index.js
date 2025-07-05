@@ -6,14 +6,14 @@ import clsx from 'clsx';
 const bots = [
   {
     server: 'Kaldrox Global',
-    image: '/img/kaldrox.png',
+    image: '/img/servers/kaldrox.png',
     description:
       'Scripts gratuitos de cavebot otimizados para o servidor Kaldrox Global. Inclui suporte para cavebot, targeting, healing e anti-idle.',
     downloadLink: 'cavebots-gratuitos/kaldrox'
   },
   /*{
     server: 'Ilusion Baiak',
-    image: '/img/ilusion.png',
+    image: '/img/servers/ilusion.png',
     description:
       'Scripts gratuitos de cavebot otimizados para o servidor Ilusion Baiak. Inclui suporte para cavebot, targeting, healing e anti-idle.',
     downloadLink: 'cavebots-gratuitos/ilusion'
