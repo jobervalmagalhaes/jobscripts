@@ -162,7 +162,7 @@ const config = {
                 <a href="https://facebook.com/jobscripts" target="_blank" rel="noreferrer noopener" aria-label="Facebook">
                   <img src="/img/social/facebook.png" alt="Facebook" width="32" height="32"/>
                 </a>
-                <a href="https://youtube.com/jobscripts" target="_blank" rel="noreferrer noopener" aria-label="YouTube">
+                <a href="https://youtube.com/@jobscripts" target="_blank" rel="noreferrer noopener" aria-label="YouTube">
                   <img src="/img/social/youtube.png" alt="YouTube" width="32" height="32"/>
                 </a>
               `,
