@@ -92,6 +92,10 @@ const config = {
                 label: 'Custom Icon',
                 to: 'scripts/custom-icon',
               },
+              {
+                label: 'Treinar ML',
+                to: 'scripts/treinar-ml',
+              },
             ],
           },
           {            
