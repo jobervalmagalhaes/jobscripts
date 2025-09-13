@@ -1,1 +1,0 @@
-Este projeto foi feito usando [Docusaurus](https://docusaurus.io/), um gerador de sites estáticos moderno.
