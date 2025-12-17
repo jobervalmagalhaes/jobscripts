@@ -19,7 +19,7 @@ description: Cavebots privados, faça do seu jeito, escolha tudo que você quise
 
 <details>
   <summary>
-    <h3>Exemplo de configurações que podem haver em um cavebot</h3>
+    <h3>Exemplo de configurações que podem haver em um cavebot (Baseada em Kaldrox Global)</h3>
   </summary>
   ````js
 ================================= CONFIGURAÇÕES ========================================
@@ -31,16 +31,13 @@ set $Cacar_Sozinho 'Nao' // Caçar apenas se não tiver outros players na tela?
 set $Cacar_Se_UE 'Nao' // Vai caçar apenas se puder dar magia em área.
 set $MonstrosLigar_Target '1' // Ligar o target com quantos monstros?
 set $MonstrosDesLigar_Target '0' // Desligar o target com quantos monstros?
-set $SegundosLigar_Target '2' // Quantos segundos depois ligar o target após desligar?
-set $Magia_Treinando 'Sim' // Se vai usar magia quando for para o treinador.
-set $ManaSafe 'Nao' // Em pontos específicos da hunt ele vai encher a mana até 70%.
 
 ================================== CONFIG. PK
 set $Esperar_SairPK 'Sim' // Se não, ele continua caçando sem magia em área.
-set $Limite_PK '10' // Limite de vezes que pode pegar pk.
+set $Limite_PK '25' // Limite de vezes que pode pegar PK.
 set $Limite_PKDesligar 'Nao' // Se não, ele continua caçando sem magia em área.
-set $CacarPK 'Nao' // Usa magia de area com jogadores na tela. (Caçar dando pk.)
-set $Limite_Frags '1' // Limite de frags se for caçar PK. (Apenas se for caçar pk.)
+set $CacarPK 'Nao' // Usa magia de area com jogadores na tela. (Caçar com PK.)
+set $Limite_Frags '1' // Limite de frags se for caçar PK. (Apenas se for caçar PK.)
 
 ================================= CONFIG. MORTES
 set $Limite_Mortes '2' // Limite de vezes que pode morrer e voltar a caçar.
@@ -49,8 +46,14 @@ set $Tempo_Morte '25' // Tempo em minutos para voltar a caçar se morrer.
 =========================== CONFIG. STAMINA & TREINER
 set $Stamina_Treiner '14' // Quantas horas de stamina ir para o treiner regenerar?
 set $Stamina_SairTreiner '42' // Quantas horas de stamina voltar a caçar?
+set $Magia_Treinando 'Sim' // Se vai usar magia quando for para o treinador.
 set $Stamina_Room 'Nao' // Se vai para a !staminaroom, necessário ter ticket ativado.
-set $Treinar_ML 'Nao' // Se vai treinar ml quando for recuperar a stamina.
+set $Usar_TicketFaster 'Nao' // Se vai usar o Ticket Faster Stamina. (Precisa estar dentro da bp principal).
+set $Usar_SpecialBottle 'Nao' // Se vai usar o Special Bottle. (Precisa estar dentro da bp principal).
+set $Usar_DoubleExp 'Nao' // Se vai usar o Duble EXP. (Precisa estar dentro da bp principal).
+set $Usar_ExtraExpDaily 'Nao' // Se vai usar o Extra Exp Daily. (Precisa estar dentro da bp principal).
+set $Usar_ExpDoublePro 'Nao' // Se vai usar o EXP Double Pro. (Precisa estar no arrow slot).
+set $Stamina_ExpDoublePro '32' // Com quantas horas de stamina usará o EXP Double Pro.
 
 ================================= CONFIG. ANTI-DROP
 set $Usar_Aol 'Sim' // Usar o comando !aol se estiver sem amuleto?
@@ -62,22 +65,26 @@ set $Vender_Loot 'Sim' // Vai vender loot?
 set $SairCom_CAP 'Nao' // Sair com cap determinado?
 set $CAP_Sair '200' // Com quanto de cap sair para vender o loot?
 
+==================================== CONFIG BANCO
+set $Depositar_Dinheiro 'Nao' // Se vai depositar dinheiro. (Anula a opção de transferência).
+set $Transferir_Dinheiro 'Nao' // Se vai transferir dinheiro. (Anula a opção de depósito).
+set $Nome_Transferencia 'N0ME' // Nome do personagem a qual será transferido o dinheiro.
+set $Dinheiro_Manter '20000000' // Dinheiro que será mantido para comprar suprimentos, bless, etc.
+
 =============================== OUTRAS CONFIGURAÇÕES
 set $Ligar_Cast 'Nao' // Vai ligar cast?
 set $Cast_Senha 'SENHADOCAST' // Se não quiser senha deixe em branco.
 set $E_Ring 'Nao' // Se vai usar energy ring.
 set $HPEnergy '80' | set $HPEnergy_Tirar '95' // Quanto de HP para colocar e retirar o Energy Ring.
 set $ERing '0' // Coloque o ID do seu ring para alternar com o energy ring, caso não tenha, deixe 0.
-set $Depositar_MightRing 'Nao' // Se vai depositar might ring no depot.
-set $Depositar_SSA 'Nao' // Se vai depositar SSA no depot.
 
 ================================= CONFIG. MAGES
 set $ED_Magia 'Exevo Gran Mas Frigo' // Escolha que magia em área usar de Druid.
 set $MS_Magia 'Exevo Gran Mas Vis' // Escolha que magia em área usar de Sorcerer.
 set $Great_Mana_Comprar '500'
 set $Great_Mana_Sair '300'
-set $SD_Comprar '500' // Deixe em 0 para substituir por magia.
-set $SD_Sair '300' // Deixe em 0 para substituir por magia.
+set $SD_Comprar '500'
+set $SD_Sair '300'
 
 ================================= CONFIG. PALADIN
 set $Great_Spirit_Comprar '500'
@@ -95,7 +102,6 @@ set $Mana_Potion_Sair '150'
 set $Usar_Utito 'Nao' // Usar utito tempo?
 set $Skill_Utito '150' // Coloque seu skill com utito. Só precisa alterar quando seu skill normal for igual ou maior.
 set $Atk_Item 'Sword' // Coloque seu item de ataque para funcionar o Utito. Axe, Sword ou Club.
-
 ````
 </details>
 
