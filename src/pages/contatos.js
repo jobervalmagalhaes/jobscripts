@@ -21,29 +21,18 @@ export default function Contatos() {
               className={styles.card}
             >
               <img src="img/social/whatsapp.png" alt="WhatsApp" />
-              <p><strong><u>+55 82 9 9946-4655</u></strong></p>
+              <p><strong><u>+55 82 9 9946 4655</u></strong></p>
             </a>
 
             {/* Telegram */}
             <a
-              href="https://t.me/jobscripts"
+              href="https://t.me/+5582999464655"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.card}
             >
               <img src="img/social/telegram.png" alt="Telegram" />
-              <p><strong><u>@jobscripts</u></strong></p>
-            </a>
-
-            {/* Gmail */}
-            <a
-              href="mailto:suporte@jobscripts.com.br"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.card}
-            >
-              <img src="img/social/gmail.png" alt="Gmail" />
-              <p><strong><u>suporte@jobscripts.com.br</u></strong></p>
+              <p><strong><u>+55 82 9 9946 4655</u></strong></p>
             </a>
           </div>
         </div>

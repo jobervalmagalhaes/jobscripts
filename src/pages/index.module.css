@@ -5,9 +5,9 @@
   overflow: hidden;
   background-image: url('/img/banner.jpg'); /* Caminho da imagem */
   background-size: cover; /* Ajusta a imagem para cobrir toda a área */
-  background-position: center; /* Centraliza a imagem */
+  background-position: top; /* Posição da imagem*/
   color: white; /* Garante que o texto seja legível sobre a imagem */
-  min-height: 400px; /* Altura mínima para garantir visibilidade */
+  min-height: 300px; /* Altura mínima para garantir visibilidade */
 }
 
 /* Ajuste o texto para melhor legibilidade */
@@ -32,7 +32,7 @@
 
 /* Ajuste o tamanho do logotipo */
 .heroLogo {
-  max-width: 400px; /* Reduz o tamanho máximo do logotipo */
+  max-width: 350px; /* Reduz o tamanho máximo do logotipo */
   width: 100%; /* Mantém a proporção responsiva */
   height: auto; /* Preserva a proporção da imagem */
   margin-bottom: 1rem; /* Espaçamento abaixo do logotipo */
