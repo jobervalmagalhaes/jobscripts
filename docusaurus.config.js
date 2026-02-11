@@ -129,14 +129,14 @@ const config = {
               },
               {
                 label: 'Telegram',
-                href: 'https://t.me/+5582999464655',
+                href: 'https://t.me/jobscripts',
               },*/
               {
                 html: `
                 <a href="https://wa.me/5582999464655" target="_blank" rel="noreferrer noopener" aria-label="WhatsApp">
                   <img src="/img/social/whatsapp.png" alt="WhatsApp" width="32" height="32"/>
                 </a>
-                <a href="https://t.me/+5582999464655" target="_blank" rel="noreferrer noopener" aria-label="Telegram">
+                <a href="https://t.me/jobscripts" target="_blank" rel="noreferrer noopener" aria-label="Telegram">
                   <img src="/img/social/telegram.png" alt="Telegram" width="32" height="32"/>
                 </a>
               `,

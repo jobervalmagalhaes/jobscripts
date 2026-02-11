@@ -26,13 +26,13 @@ export default function Contatos() {
 
             {/* Telegram */}
             <a
-              href="https://t.me/+5582999464655"
+              href="https://t.me/jobscripts"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.card}
             >
               <img src="img/social/telegram.png" alt="Telegram" />
-              <p><strong><u>+55 82 9 9946 4655</u></strong></p>
+              <p><strong><u>@jobscripts</u></strong></p>
             </a>
           </div>
         </div>
