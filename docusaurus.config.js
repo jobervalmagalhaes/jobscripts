@@ -7,10 +7,15 @@ const config = {
   favicon: 'img/favicon.ico',
   url: 'https://jobscripts.com.br',
   baseUrl: '/',
+  trailingSlash: false,
   organizationName: 'jobervalmagalhaes',
   projectName: 'jobscripts',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
   i18n: {
     defaultLocale: 'pt-BR',
     locales: ['pt-BR'],
@@ -43,6 +48,23 @@ const config = {
           customCss: './src/css/custom.css',
         },
       }),
+    ],
+  ],
+
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        createRedirects(existingPath) {
+          if (existingPath === '/') {
+            return undefined;
+          }
+          if (existingPath.endsWith('/')) {
+            return [existingPath.slice(0, -1)];
+          }
+          return [`${existingPath}/`];
+        },
+      },
     ],
   ],
 

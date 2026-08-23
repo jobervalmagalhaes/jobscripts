@@ -12,6 +12,13 @@ const bots = [
     downloadLink: 'cavebots-gratuitos/kaldrox'
   },
   {
+    server: 'UltronOT Global',
+    image: '/img/servers/ultron.png',
+    description:
+      'Scripts gratuitos de cavebot otimizados para o servidor Ultron OT Global. Inclui suporte para cavebot, targeting, healing e anti-idle.',
+    downloadLink: 'cavebots-gratuitos/ultron'
+  },
+  {
     server: 'Ilusion Baiak',
     image: '/img/servers/ilusion.png',
     description:
