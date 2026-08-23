@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkjobscripts_site=self.webpackChunkjobscripts_site||[]).push([[8121],{8070:s=>{s.exports=JSON.parse('{"tags":[{"label":"Tibia","permalink":"/blog/tags/tibia","description":"Posts relacionados ao Tibia.","count":2},{"label":"Kaldrox","permalink":"/blog/tags/kaldrox","description":"Posts do Kaldrox Global.","count":1}]}')}}]);

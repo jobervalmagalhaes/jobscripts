@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkjobscripts_site||=[]).push([[8947],{6600(s){s.exports=JSON.parse('{"authors":[{"name":"JOB Scripts","title":"O scripter","url":"https://jobscripts.com.br","page":{"permalink":"/blog/authors/all-jobscripts/"},"socials":{"instagram":"https://www.instagram.com/jobscripts"},"imageURL":"/img/jobscripts.jpg","key":"jobscripts","count":2}]}')}}]);
